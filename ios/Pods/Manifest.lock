@@ -1,0 +1,28 @@
+PODS:
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - SVProgressHUD (2.2.5)
+  - TTRangeSlider (1.0.5)
+  - UICountingLabel (1.2.0)
+
+DEPENDENCIES:
+  - PNChart
+  - SVProgressHUD
+  - TTRangeSlider
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - PNChart
+    - SVProgressHUD
+    - TTRangeSlider
+    - UICountingLabel
+
+SPEC CHECKSUMS:
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TTRangeSlider: 2f2ce4a33b32bb323c6575b9f5161c4664459c58
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+
+PODFILE CHECKSUM: 3d93d66648b7e9a09b8031cea11121bf71be9b26
+
+COCOAPODS: 1.5.0
