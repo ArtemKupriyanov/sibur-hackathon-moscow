@@ -3,33 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dashboard</title>
-
+    <title>UI Elements</title>
     <style>
-      .collapse-row.collapsed + tr {
-        display: none;
-      }
-
-      .mimg {
-        height: 50px;
-      }
-
-      .parent77 {
-        position: relative;
-      }
-
-      .child77 {
-        width: 300px;
-        height: 100px;
-        padding: 20px;
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        margin: -70px 0 0 -170px;
-      }
-
       #loader {
         transition: all 0.3s ease-in-out;
         opacity: 1;
@@ -45,6 +20,8 @@
         opacity: 0;
         visibility: hidden;
       }
+
+
 
       .spinner {
         width: 40px;
@@ -77,8 +54,6 @@
         }
       }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   </head>
   <body class="app">
     <!-- @TOC -->
@@ -102,144 +77,12 @@
     </div>
 
     <script>
-
-      function load_documents() {
-        var x_str = "[{\"breaks\": 3,\"distance_left\": 65,\"distance_ran\": 98765,\"id\": \"1488228228\",\"location\": \"Галич\",\"maintainces\": [{\"date\": \"22.03.2018\",\"depo\": \"Депо 1\",\"maintaince_type\": \"ОУМК\"},{\"date\": \"27.03.2018\", \"depo\": \"Депо 2\", \"maintaince_type\": \"ОУМК2\"}],\"next_maintaince\": {\"date\": \"22.03.2018\", \"maintaince_type\": \"ОУМК\"},\"next_ride\": {\"date\": \"22.02.2018\", \"location\": \"Иваново\"},\"part_of_time_to_next_mainaince_required\": 0.9,\"schedule\": [{\"date\": \"22.02.2018\", \"from\": \"Галич\", \"to\": \"Иваново\"},{\"date\": \"23.02.2018\", \"from\": \"Иваново\", \"to\": \"Хуйцы\"}],\"total_weight_transported\": 143},{\"breaks\": 3,\"distance_left\": 65,\"distance_ran\": 98765,\"id\": \"666666\",\"location\": \"Галич\",\"maintainces\": [{\"date\": \"22.03.2018\",\"depo\": \"Депо 1\",\"maintaince_type\": \"ОУМК\"},{\"date\": \"27.03.2018\", \"depo\": \"Депо 2\", \"maintaince_type\": \"ОУМК2\"}],\"next_maintaince\": {\"date\": \"22.03.2018\", \"maintaince_type\": \"ОУМК\"},\"next_ride\": {\"date\": \"22.02.2018\", \"location\": \"Иваново\"},\"part_of_time_to_next_mainaince_required\": 0.9,\"schedule\": [{\"date\": \"22.02.2018\", \"from\": \"Галич\", \"to\": \"Иваново\"},{\"date\": \"23.02.2018\", \"from\": \"Иваново\", \"to\": \"Хуйцы\"}],\"total_weight_transported\": 143}]";
-        var obj = JSON.parse(x_str);
-
-
-
-
-        for (var i = 0; i < obj.length;i++) {
-          var item = obj[i];
-          var template = `<div class="message" city="`+item["location"]+`" search="`+btoa(unescape(encodeURIComponent(JSON.stringify(item))))+`"><hr class="col-xs-12"><div class="row" style="height: 100px;">
-                    <div class="col-md-2">
-                      <img src="assets/static/images/cart.png" class="mimg" >
-                       <br>
-                      <a data-toggle="collapse" href="#demo`+i+`" role="button" aria-expanded="false" aria-controls="demo">
-                        <span style="font-family: HelveticaNeue-CondensedBold; color: lightgray; font-size: 10pt;">Id: `+item["id"]+`</span></a>
-                    </div>
-
-
-                    <div class="col-md-5">
-                      <div class="row">
-                        <div class="col-md-6" style="height: 50px;"><span style="font-family: HelveticaNeue-CondensedBold;">Местоположение:</span></div>
-                        <div class="col-md-6" style="height: 50px;"><span style="font-family: HelveticaNeue-CondensedBold;">Cледующий рейс:</span></div>
-                      </div>
-                      <div class="row" >
-                        <div class="col-md-6" style="height: 50px;">
-                          <span class="icon-holder"><i class="c-grey ti-location-pin"></i>&nbsp;</span>`+item["location"]+`
-                        </div>
-                        <div class="col-md-6" style="height: 50px;">
-                          <span class="icon-holder"><i class="c-grey ti-calendar"></i>&nbsp;</span>`+item["schedule"][0]["date"]+`<br>
-                          <span class="icon-holder"><i class="c-grey ti-map-alt"></i>&nbsp;</span>`+item["schedule"][0]["to"]+`
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div style="height: 50px;">
-                      <span style="font-family: HelveticaNeue-CondensedBold;">Ближайшее обслуживание:</span>
-                      </div>
-                      <div style="height: 50px;">
-                        <span class="icon-holder"><i class="c-grey ti-calendar"></i>&nbsp;</span>`+item["maintainces"][0]["date"]+`<br>
-                        <!--<span class="icon-holder"><i class="c-grey ti-map-alt"></i>&nbsp;</span>Депо №3-->
-                        <span class="icon-holder"><i class="c-grey ti-info-alt"></i>&nbsp;</span>`+item["maintainces"][0]["maintaince_type"]+`
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="easy-pie-chart" data-size='80' data-percent="`+100*item["part_of_time_to_next_mainaince_required"]+`" data-bar-color='#ff9800'>
-                        <span style="width: 100%; text-align: center;"></span>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div id="demo`+i+`" class="collapse">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <span style="font-family: HelveticaNeue-CondensedBold; color: darkgrey; font-size: 10pt;">Расписание:</span>
-                        <table class="table table-sm" style="font-size: 9pt;">
-                          <tbody>`;
-                      for (var it1 = 0; it1 < item["schedule"].length;it1++){
-                        var item1 = item["schedule"][it1];
-                          template+=`<tr>
-                            <td>`+item1["date"]+`</td>
-                            <td>`+item1["from"]+`</td>
-                            <td>`+item1["to"]+`</td>
-                          </tr>`;
-                      }
-            template += `</tbody>
-                        </table>
-                      </div>
-                      <div class="col-md-5">
-                        <span style="font-family: HelveticaNeue-CondensedBold; color: darkgrey; font-size: 10pt;">Обслуживание:</span>
-                        <table class="table table-sm" style="font-size: 9pt;">
-                          <tbody>`;
-          for (var it1 = 0; it1 < item["maintainces"].length;it1++){
-            var item1 = item["maintainces"][it1];
-            template+=`<tr>
-                            <td>`+item1["date"]+`</td>
-                            <td>`+item1["depo"]+`</td>
-                            <td>`+item1["maintaince_type"]+`</td>
-                          </tr>`;
-          }
-                         template += `</tbody>
-                        </table>
-                      </div>
-                      <div class="col-md-3"><br>
-                        <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Пробег: </span>`+item["distance_ran"]+`км<br>
-                        <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Осталось: </span>`+item["distance_left"]+`км<br>
-                        <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Поломки: </span>`+item["breaks"]+`шт<br>
-                        <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Перевез: </span>`+item["total_weight_transported"]+`т<br>
-
-                      </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-6">
-                    <a class='' href="chat.html">
-                      <span class="icon-holder">
-                        <i class="ti-comment-alt" style="color: #444444"></i>
-                </span><span style="color: #444444;">Обсуждение вагона</span></a></div>
-                  </div></div></div>`;
-          $(".messagelist").append(template);
-        }
-
-      }
-      function filter_city(city) {
-        if (city != "Все") {
-          $('.message').hide();
-          $('.message[city=\'' + city + '\']').show();
-        } else {
-          $('.message').show();
-        }
-      }
-      function search() {
-        var q  = $("input[name=\"SEARCHER\"]").val();
-
-        if (q === undefined) return;
-
-        $(".message").each(function() {
-          var attr = decodeURIComponent(escape(atob(this.getAttribute("search"))));
-          if (attr.includes(q)){
-            $(this).show();
-          } else {
-            $(this).hide();
-          }
-        });
-      }
-
-
-        window.addEventListener('load', () => {
+      window.addEventListener('load', () => {
         const loader = document.getElementById('loader');
         setTimeout(() => {
           loader.classList.add('fadeOut');
-        }, 305);
-          load_documents();
+        }, 300);
       });
-
-
-
     </script>
 
     <!-- @App Content -->
@@ -347,7 +190,7 @@
                 </a>
               </li>
               <li class="search-input">
-                <input class="form-control" name="SEARCHER" type="text" placeholder="Search..." onchange="search();">
+                <input class="form-control" type="text" placeholder="Search...">
               </li>
             </ul>
             <ul class="nav-right">
@@ -555,65 +398,98 @@
 
         <!-- ### $App Screen Content ### -->
         <main class='main-content bgc-grey-100'>
-          <div id='mainContent'>
-            <div class="row">
-              <div class="col-md-9">
-                <div class="bgc-white p-20 bd">
-                  <h6 class="c-grey-900">Вагоны</h6>
-                  <div class="messagelist"> </div>
+          <div id='mainContent' style="color: #128c7e;border-color:#128c7e;">
+            <div class="row gap-20 masonry pos-r" style="color: #128c7e;border-color:#128c7e;">
+              <div class="masonry-sizer col-md-6"></div>
+              <div class="masonry-item  w-100" style="color: #128c7e;border-color:#128c7e;">
+                <div class="row gap-20" style="color: #128c7e;border-color:#128c7e;">
+                  <!-- #Toatl Visits ==================== -->
+                  <!-- #Bounce Rate ==================== -->
+                  <div class='col-md-12'>
+                    <!-- <h6 class="c-grey-900">List Group</h6> -->
+                    <div class="mT-60" style="color: #128c7e;border-color:#128c7e;">
+                      <div class="btn-group mr-4" role="group" aria-label="first group" style="color: #128c7e;border-color:#128c7e;">
+                        <button type="button" class="btn cur-p btn-outline-primary"><h5 class="lh-1">Логист</h5></button>
+                        <button type="button" class="btn cur-p btn-outline-primary active"><h5 class="lh-1">Менеджер</h5></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="masonry-item col-md-6" style="color: #128c7e;border-color:#128c7e;">
+                <!-- #Sales Report ==================== -->
+                <div class="bd bgc-white" style="color: #128c7e;border-color:#128c7e;">
+                  <div class="layers">
+                    <div class="layer w-100 p-20">
+                      <h4 class="lh-1">Оптимизация</h4>
+                    </div>
+                    <div class="layer w-100">
+                      <div class="bgc-light-blue-500 c-white p-20">
+                        <div class="peers ai-c jc-sb gap-40">
+                          <div class="peer peer-greed">
+                            <h4>Май 2018</h4>
+                            <h6><p class="mB-0">Сэкономлено денег:</p></h6>
+                          </div>
+                          <div class="peer">
+                            <h1 class="text-right">↑ &nbsp 6 млрд. ₽</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-responsive p-20">
+                        <table class="table">
+                          <thead>
+                          <tr>
+                            <th class=" bdwT-0">Статистика</th>
+                            <th class=" bdwT-0">Количество</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td><span class="badge bgc-red-50 c-red-700 p-10 lh-0 tt-c badge-pill"><font size=+1>В сервисе</font></span> </td>
+                            <td>12</td>
+                          </tr>
+                          <tr>
+                            <td><span class="badge bgc-deep-purple-50 c-deep-purple-700 p-10 lh-0 tt-c badge-pill"><font size=+1>Готово</font></span></td>
+                            <td>85</td>
+                          </tr>
 
+                          <tr>
+                            <td><span class="badge bgc-green-50 c-green-700 p-10 lh-0 tt-c badge-pill"><font size=+1>Используется</font></span></td>
+                            <td>48</td>
+                          </tr>
+
+                          <tr>
+                            <td><span class="badge bgc-yellow-50 c-yellow-700 p-10 lh-0 tt-c badge-pill"><font size=+1>Простаивает</font></span></td>
+                            <td>71</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
-              <div class="col-md-2" style="position: fixed;">
+              <div class="masonry-item col-md-6">
                 <div class="bgc-white p-20 bd">
-                  <div style="margin-top: 10px;">
-                  <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;color: #128c7e;border-color:#128c7e;">Станция</button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
-                    <a class="dropdown-item" href="#" onclick="filter_city('Гатка')">Гатка</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Георгополь')">Георгополь</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Липовка')">Липовка</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Милта')">Милта</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Новорепное')">Новорепное</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Приморск')">Приморск</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Рожок')">Рожок</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Северный')">Северный</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Сосновка')">Сосновка</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Ясная поляна')">Ясная поляна</a>
-                    <a class="dropdown-item" href="#" onclick="filter_city('Все')">Все</a>
-
+                  <h5>Объем ремонтов по месяцам</h5>
+                  <div class="mT-30">
+                    <center><h6 class="c-grey-900">
+                      <div class="btn-group mr-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-outline-primary active">Все</button>
+                        <button type="button" class="btn btn-outline-primary">Кап</button>
+                        <button type="button" class="btn btn-outline-primary">Дел</button>
+                        <button type="button" class="btn btn-outline-primary">ППР</button>
+                        <button type="button" class="btn btn-outline-primary">ВОиГИ</button>
+                      </div>
+                    </h6>
+                    </center>
+                    <canvas id="bar-chart" height="160"></canvas>
                   </div>
-                  </div>
-
-                  <!-- ===============second dropdown======================= -->
-                  <div style="margin-top: 20px;">
-                  <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;color: #128c7e;border-color:#128c7e;">Тип вагона</button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
-                    <a class="dropdown-item" href="#">Газовые</a>
-                    <a class="dropdown-item" href="#">Нефтебензиновые</a>
-                    <a class="dropdown-item" href="#">Химические</a>
-                  </div>
-                  </div>
-
-
-
-                  <div style="margin-top: 20px;margin-bottom: 10px;">
-                  <!-- ===============third dropdown======================= -->
-                  <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;color: #128c7e;border-color:#128c7e; ">Сортировать по:</button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
-                    <a class="dropdown-item" href="#">Станции</a>
-                    <a class="dropdown-item" href="#">Типу вагона</a>
-                    <a class="dropdown-item" href="#">Износу</a>
-                    <a class="dropdown-item" href="#">Ближайшему рейсу</a>
-                    <a class="dropdown-item" href="#">Ближайшему ремонту</a>
-                  </div>
-                  </div>
-
                 </div>
               </div>
-              <div class="col-md-1"></div>
+
             </div>
-          </div>
         </main>
 
         <!-- ### $App Screen Footer ### -->

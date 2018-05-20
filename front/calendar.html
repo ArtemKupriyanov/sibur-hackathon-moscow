@@ -3,33 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Dashboard</title>
-
+  <title>Calendar</title>
   <style>
-    .collapse-row.collapsed + tr {
-      display: none;
-    }
-
-    .mimg {
-      height: 50px;
-    }
-
-    .parent77 {
-      position: relative;
-    }
-
-    .child77 {
-      width: 300px;
-      height: 100px;
-      padding: 20px;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-
-      margin: -70px 0 0 -170px;
-    }
-
     #loader {
       transition: all 0.3s ease-in-out;
       opacity: 1;
@@ -45,6 +20,8 @@
       opacity: 0;
       visibility: hidden;
     }
+
+
 
     .spinner {
       width: 40px;
@@ -77,7 +54,6 @@
         }
     }
   </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body class="app">
 <!-- @TOC -->
@@ -101,137 +77,12 @@
 </div>
 
 <script>
-
-  var obj = [{"id":"123456",'spend_old':200,'spend_new':100},{"id":"121212",'spend_old':200,'spend_new':100}];
-
-  var cart = [];
-
-  var optim = 0;
-
-
-  function accept(oid) {
-    $("#demo"+oid).hide();
-    add_cart(oid);
-  }
-  function reject(oid) {
-    $("#demo"+oid).hide();
-  }
-
-  function add_cart(oid) {
-    cart.push(oid);
-    optim += obj[oid]['spend_old'] - obj[oid]['spend_new'];
-    var template = `<tr><td>`+obj[oid]['id']+`</td><td>`+obj[oid]['spend_old'] - obj[oid]['spend_new']+` млн ₽</td></tr>`;
-    $(".cartlist").append(template);
-
-    $("totaler").text(optim +" млн ₽");
-
-  }
-
-  function load_documents(){
-    for (var i = 0; i < obj.length;i++) {
-      var item = obj[i];
-
-
-      var template = `<hr class="col-xs-12">
-              <div class="row" style="height: 100px;">
-                <div class="col-md-2">
-                  <img src="assets/static/images/cart.png" class="mimg" onclick="$('#demo').collapse()">
-                  <br>
-                  <a data-toggle="collapse" href="#demo`+i+`" role="button" aria-expanded="false" aria-controls="demo">
-                    <span style="font-family: HelveticaNeue-CondensedBold; color: lightgray; font-size: 10pt;">#`+item["id"]+`</span></a>
-                </div>
-                <div class="col-md-6">
-                  <table class="table" style="font-size: 9pt;">
-                    <tbody>
-                    <tr>
-                      <td><b><i class="ti-dashboard"></i>&nbsp;Утилизация<b></td>
-                      <td>78%</td>
-                      <td>-></td>
-                      <td><b style="color: #0ac578">92%</b></td>
-                    </tr>
-                    <tr>
-                      <td><b><i class="ti-money"></i>&nbsp;Затраты</b></td>
-                      <td>123 млн ₽</td>
-                      <td>-></td>
-                      <td><b style="color: #0ac578">75 млн ₽</b></td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-info" style="width: 100%;background-color:#128c7e" onclick="accept(`+i+`);"> Принять</button>
-                </div>
-
-              </div>
-
-              <div id="demo`+i+`" class="collapse">
-                <div class="row">
-                  <div class="col-md-12">
-                    <span style="font-family: HelveticaNeue-CondensedBold; color: darkgrey; font-size: 10pt;">Расписание:</span>
-                    <table class="table table-sm" style="font-size: 9pt;">
-                      <thead>
-                      <tr>
-                        <td>
-                        <td>Станд.</td>
-                        <td></td>
-                        <td>Оптип.</td>
-                        <td></td>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                        <td>Капитальный</td>
-                        <td>22.02</td>
-                        <td>Депо-Молодежное</td>
-                        <td>22.02</td>
-                        <td>Депо-Молодежное</td>
-                      </tr>
-                      <tr>
-                        <td>Деповский</td>
-                        <td>24.02</td>
-                        <td>Депо-Молодежное</td>
-                        <td><b style="color: #0ac578">23.02</b></td>
-                        <td>Депо-Молодежное</td>
-                      </tr>
-                      <tr>
-                        <td>ППР</td>
-                        <td>20.02</td>
-                        <td>Депо-Молодежное</td>
-                        <td><b style="color: #0ac578">12.02</b></td>
-                        <td><b style="color: #0ac578">Депо-Ленинское</b></td>
-                      </tr>
-                      <tr>
-                        <td>ВОиГИ</td>
-                        <td>29.02</td>
-                        <td>Депо-Молодежное</td>
-                        <td><b style="color: #0ac578">13.02</b></td>
-                        <td><b style="color: #0ac578">Депо-Ленинское</b></td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                </div>
-              </div>`;
-      $(".messagelist").append(template);
-    }
-
-  }
-
-
   window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     setTimeout(() => {
       loader.classList.add('fadeOut');
     }, 300);
-    load_documents();
   });
-
-
-
 </script>
 
 <!-- @App Content -->
@@ -548,48 +399,130 @@
     <!-- ### $App Screen Content ### -->
     <main class='main-content bgc-grey-100'>
       <div id='mainContent'>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="bgc-white p-20 bd">
-              <h6 class="c-grey-900">Оптимизации</h6>
-              <div class="messagelist"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="bdrs-3 ov-h bgc-white bd">
+                <div class="bgc-deep-purple-500 ta-c p-30">
+                  <h1 class="fw-300 mB-5 lh-1 c-white">21<span class="fsz-def">ое</span></h1>
+                  <h3 class="c-white">Понедельник</h3>
+                </div>
+                <div class="pos-r">
+                  <button type="button" class="mT-nv-50 pos-a r-10 t-2 btn cur-p bdrs-50p p-0 w-3r h-3r btn-warning">
+                    <i class="ti-plus"></i>
+                  </button>
+                  <ul class="m-0 p-0 mT-20">
+                    <li class="bdB peers ai-c jc-sb fxw-nw">
+                      <a class="td-n p-20 peers fxw-nw mR-20 peer-greed c-grey-900" href="javascript:void(0);" data-toggle="modal" data-target="#calendar-edit">
+                        <div class="peer mR-15">
+                          <i class="fa fa-fw fa-clock-o c-red-500"></i>
+                        </div>
+                        <div class="peer">
+                          <span class="fw-600">Выгрузить аналитику в<br> общую базу данных  SIBUR</span>
+                          <div class="c-grey-600">
+                            <span class="c-grey-700">21 Мая - </span>
+                            <i>Работа с БД</i>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="peers mR-15">
+                        <div class="peer">
+                          <a href="" class="td-n c-deep-purple-500 cH-blue-500 fsz-md p-5">
+                            <i class="ti-pencil"></i>
+                          </a>
+                        </div>
+                        <div class="peer">
+                          <a href="" class="td-n c-red-500 cH-blue-500 fsz-md p-5">
+                            <i class="ti-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="bdB peers ai-c jc-sb fxw-nw">
+                      <a class="td-n p-20 peers fxw-nw mR-20 peer-greed c-grey-900" href="javascript:void(0);" data-toggle="modal" data-target="#calendar-edit">
+                        <div class="peer mR-15">
+                          <i class="fa fa-fw fa-clock-o c-blue-500"></i>
+                        </div>
+                        <div class="peer">
+                          <span class="fw-600">Отправка вагонов №57465460 <br>и №50815729 на вакуумную <br>очистку и гидроиспытания</span>
+                          <div class="c-grey-600">
+                            <span class="c-grey-700">21 Мая - </span>
+                            <i>Ремонт вагонов</i>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="peers mR-15">
+                        <div class="peer">
+                          <a href="" class="td-n c-deep-purple-500 cH-blue-500 fsz-md p-5">
+                            <i class="ti-pencil"></i>
+                          </a>
+                        </div>
+                        <div class="peer">
+                          <a href="" class="td-n c-red-500 cH-blue-500 fsz-md p-5">
+                            <i class="ti-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div id='full-calendar'></div>
             </div>
           </div>
-          <div class="col-md-3" style="position: fixed;">
-            <div class="bgc-white p-20 bd">
-              <h4 style="font-family: HelveticaNeue-CondensedBold;">Корзина</h4>
-              <table class="table" style="font-size: 9pt;">
-                <thead>
-                <tr>
-                <td><span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Вагон</span></td>
-                <td><span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Оптимизация</span></td>
-                </tr>
-                </thead>
-                <tbody class="cartlist">
-
-
-                </tbody>
-                <tfoot>
-                <tr>
-                <td><span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Итог:</span></td>
-                <td><span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;" id="totaler"></span></td>
-                </tr>
-                </tfoot>
-              </table>
-
-
-              <button class="btn btn-primary" style="background-color:#128c7e;">Подтвердить</button>
+          <div class="modal fade" id="calendar-edit">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="bd p-15">
+                  <h5 class="m-0">Add Event</h5>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label class="fw-500">Event title</label>
+                      <input class="form-control bdc-grey-200">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label class="fw-500">Start</label>
+                        <div class="timepicker-input input-icon form-group">
+                          <div class="input-group">
+                            <div class="input-group-addon bgc-white bd bdwR-0">
+                              <i class="ti-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control bdc-grey-200 start-date" placeholder="Datepicker" data-provide="datepicker">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="fw-500">End</label>
+                        <div class="timepicker-input input-icon form-group">
+                          <div class="input-group">
+                            <div class="input-group-addon bgc-white bd bdwR-0">
+                              <i class="ti-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control bdc-grey-200 end-date" placeholder="Datepicker" data-provide="datepicker">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="fw-500">Event title</label>
+                      <textarea class="form-control bdc-grey-200" rows='5'></textarea>
+                    </div>
+                    <div class="text-right">
+                      <button class="btn btn-primary cur-p" data-dismiss="modal">Done</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-1"></div>
         </div>
       </div>
     </main>
-
-    <!-- ### $App Screen Footer ### -->
-    <footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600">
-      <span>Hack.zamAI 2018 @ SIBUR</span>
-    </footer>
   </div>
 </div>
 </body>

@@ -61,6 +61,8 @@
         }
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body class="app">
 <!-- @TOC -->
@@ -84,12 +86,411 @@
 </div>
 
 <script>
+
+  function load_documents() {
+    var objs = JSON.parse(`[{"id": "50262674",
+  "location": "Милта",
+  "maintaince_type": "Деповский",
+  "status": "in",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "58178740",
+  "location": "Приморск",
+  "maintaince_type": "Плановый предупредительный",
+  "status": "in",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "58183245",
+  "location": "Приморск",
+  "maintaince_type": "Капитальный",
+  "status": "gin",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "50888502",
+  "location": "Приморск",
+  "maintaince_type": "Деповский",
+  "status": "in",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "50769371",
+  "location": "Рожок",
+  "maintaince_type": "Деповский",
+  "status": "in",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "50811801",
+  "location": "Сосновка",
+  "maintaince_type": "Деповский",
+  "status": "in",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "50516434",
+  "location": "Милта",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "50517762",
+  "location": "Липовка",
+  "maintaince_type": "Плановый предупредительный",
+  "status": "in",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "50647445",
+  "location": "Георгополь",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "4 дня"},
+ {"id": "50869726",
+  "location": "Милта",
+  "maintaince_type": "Деповский",
+  "status": "gin",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "50870260",
+  "location": "Липовка",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "51167286",
+  "location": "Липовка",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "54617279",
+  "location": "Северный",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "51802601",
+  "location": "Георгополь",
+  "maintaince_type": "Плановый предупредительный",
+  "status": "gin",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "51803211",
+  "location": "Новорепное",
+  "maintaince_type": "Плановый предупредительный",
+  "status": "in",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "51803377",
+  "location": "Липовка",
+  "maintaince_type": "Деповский",
+  "status": "in",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "51804037",
+  "location": "Липовка",
+  "maintaince_type": "Плановый предупредительный",
+  "status": "in",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "4 дня"},
+ {"id": "51804375",
+  "location": "Гатка",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gin",
+  "time_since_last_maintaince": "22 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "58157488",
+  "location": "Приморск",
+  "maintaince_type": "Капитальный",
+  "status": "gout",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "58159377",
+  "location": "Ясная поляна",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "58189713",
+  "location": "Гатка",
+  "maintaince_type": "Деповский",
+  "status": "in",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "57832883",
+  "location": "Ясная поляна",
+  "maintaince_type": "Капитальный",
+  "status": "in",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "57818726",
+  "location": "Липовка",
+  "maintaince_type": "Плановый предупредительный",
+  "status": "gout",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "77482594",
+  "location": "Ясная поляна",
+  "maintaince_type": "Деповский",
+  "status": "gin",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "58156936",
+  "location": "Приморск",
+  "maintaince_type": "Капитальный",
+  "status": "gout",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "50514660",
+  "location": "Липовка",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "in",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "57814808",
+  "location": "Ясная поляна",
+  "maintaince_type": "Капитальный",
+  "status": "gout",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "77480499",
+  "location": "Липовка",
+  "maintaince_type": "Деповский",
+  "status": "in",
+  "time_since_last_maintaince": "22 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "57821480",
+  "location": "Приморск",
+  "maintaince_type": "Деповский",
+  "status": "gin",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "57822413",
+  "location": "Северный",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "4 дня"},
+ {"id": "77381598",
+  "location": "Ясная поляна",
+  "maintaince_type": "Деповский",
+  "status": "gin",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "57790172",
+  "location": "Рожок",
+  "maintaince_type": "Деповский",
+  "status": "gin",
+  "time_since_last_maintaince": "22 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "50893197",
+  "location": "Георгополь",
+  "maintaince_type": "Деповский",
+  "status": "in",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "58154196",
+  "location": "Милта",
+  "maintaince_type": "Капитальный",
+  "status": "gin",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "57761488",
+  "location": "Рожок",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gout",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "57761637",
+  "location": "Георгополь",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gin",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "57761645",
+  "location": "Новорепное",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gin",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "57761660",
+  "location": "Гатка",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "in",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "57761710",
+  "location": "Сосновка",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gout",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "57761736",
+  "location": "Георгополь",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gin",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "57761744",
+  "location": "Приморск",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gin",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "57761751",
+  "location": "Георгополь",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "in",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "57761785",
+  "location": "Рожок",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "in",
+  "time_since_last_maintaince": "22 месяцев",
+  "timeleft": "2 дня"},
+ {"id": "57761801",
+  "location": "Ясная поляна",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gin",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "4 дня"},
+ {"id": "57761827",
+  "location": "Липовка",
+  "maintaince_type": "Вакуумная очистка и гидроиспытания",
+  "status": "gout",
+  "time_since_last_maintaince": "22 месяцев",
+  "timeleft": "4 дня"},
+ {"id": "57762080",
+  "location": "Милта",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "22 месяцев",
+  "timeleft": "1 дня"},
+ {"id": "57767766",
+  "location": "Ясная поляна",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "23 месяцев",
+  "timeleft": "3 дня"},
+ {"id": "57863672",
+  "location": "Георгополь",
+  "maintaince_type": "Деповский",
+  "status": "gin",
+  "time_since_last_maintaince": "20 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "57864589",
+  "location": "Милта",
+  "maintaince_type": "Деповский",
+  "status": "gout",
+  "time_since_last_maintaince": "24 месяцев",
+  "timeleft": "0 дня"},
+ {"id": "57866576",
+  "location": "Новорепное",
+  "maintaince_type": "Капитальный",
+  "status": "gin",
+  "time_since_last_maintaince": "21 месяцев",
+  "timeleft": "2 дня"}]`);
+    for (var i = 0; i < objs.length; i++){
+         var item = objs[i];
+    var template = `<div class="message" city="`+item["location"]+`" search="`+btoa(unescape(encodeURIComponent(JSON.stringify(item))))+`">
+      <hr class="col-xs-12">
+      <div class="row" style="height: 80px;">
+      <div class="col-md-2">` ;
+
+      if (parseInt(item["id"]) % 3 === 0){template += `<img src="assets/static/images/cart.png" class="mimg" onclick="$('#demo` + i + `').collapse()">`;}
+      if (parseInt(item["id"]) % 3 === 1){template += `<img src="assets/static/images/cart_gas.png" class="mimg" onclick="$('#demo` + i + `').collapse()">`;}
+      if (parseInt(item["id"]) % 3 === 2){template += `<img src="assets/static/images/cart_chem.png" class="mimg" onclick="$('#demo` + i + `').collapse()">`;}
+      template += `<br>
+      <a data-toggle="collapse" href="#demo`+i+`" role="button" aria-expanded="false" aria-controls="demo">
+      <span style="font-family: HelveticaNeue-CondensedBold; color: lightgray; font-size: 10pt;">#` + item['id'] + `</span></a>
+    </div>
+
+
+    <div class="col-md-5">
+      <div class="row">
+      <div class="col-md-6" style="height: 40px;"><span style="font-family: HelveticaNeue-CondensedBold;">Местоположение:</span></div>
+    <div class="col-md-6" style="height: 40px;"><span style="font-family: HelveticaNeue-CondensedBold;">Статус:</span></div>
+    </div>
+    <div class="row" >
+      <div class="col-md-6" style="height: 40px;">
+      <span class="icon-holder"><i class="c-grey ti-location-pin"></i>&nbsp;</span>` + item['location'] + `
+    </div>
+    <div class="col-md-6" style="height: 40px;">`;
+
+    if (item["status"] == "gin") {
+      template += `<span class="icon-holder"><i class="c-grey ti-shift-right"></i>&nbsp;</span>Едет в депо`;
+    }
+    if (item["status"] == "gout") {
+      template += `<span class="icon-holder"><i class="c-grey ti-shift-right"></i>&nbsp;</span>Едет из депо`;
+    }
+    if (item["status"] == "in") {
+      template += `<span class="icon-holder"><i class="c-grey ti-shift-right"></i>&nbsp;</span>Находится в депо`;
+    }
+
+    template += `</div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div style="height: 40px;">
+      <span style="font-family: HelveticaNeue-CondensedBold;">Осталось:</span>
+    </div>
+    <div style="height: 40px;">
+      <span class="icon-holder"><i class="c-grey ti-calendar"></i>&nbsp;</span>` + item["timeleft"] + `
+
+    </div>
+    </div>
+    <div class="col-md-2">
+      <div class="easy-pie-chart" data-size='70' data-percent="75" data-bar-color='#ff9800'>
+      <span></span>
+      </div>
+      </div>
+
+      </div>
+
+      <div id="demo`+i+`" class="collapse">
+      <div class="row">
+      <div class="col-md-12">
+      <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Тип: </span>` + item["maintaince_type"] + `<br>
+    <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Времени с последнего ремонта: </span> ` + item["time_since_last_maintaince"] + `<br>
+    <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Комметарий: </span>Отсутствует<br>
+
+    </div>
+
+    </div>
+    </div></div>`;
+    $(".messagelist").append(template);
+  }
+  }
+
+
   window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     setTimeout(() => {
       loader.classList.add('fadeOut');
     }, 300);
+    load_documents();
   });
+  function filter_city(city) {
+    if (city != "Все") {
+      $('.message').hide();
+      $('.message[city=\'' + city + '\']').show();
+    } else {
+      $('.message').show();
+    }
+  }
+  function search() {
+    var q  = $("input[name=\"SEARCHER\"]").val();
+
+    if (q === undefined) return;
+
+    $(".message").each(function() {
+      var attr = decodeURIComponent(escape(atob(this.getAttribute("search"))));
+      if (attr.includes(q)){
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  }
+
 
 
 
@@ -99,202 +500,90 @@
 <!-- =================================================== -->
 <div>
   <!-- #Left Sidebar ==================== -->
-  <div class="sidebar">
-    <div class="sidebar-inner">
-      <!-- ### $Sidebar Header ### -->
-      <div class="sidebar-logo">
-        <div class="peers ai-c fxw-nw">
-          <div class="peer peer-greed">
-            <a class="sidebar-link td-n" href="index.html">
-              <div class="peers ai-c fxw-nw">
-                <div class="peer">
-                  <div class="logo">
-                    <img src="assets/static/images/logo.png" alt="">
-                  </div>
-                </div>
-                <div class="peer peer-greed">
-                  <h5 class="lh-1 mB-0 logo-text">Adminator</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="peer">
-            <div class="mobile-toggle sidebar-toggle">
-              <a href="" class="td-n">
-                <i class="ti-arrow-circle-left"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- ### $Sidebar Menu ### -->
-      <ul class="sidebar-menu scrollable pos-r">
-        <li class="nav-item mT-30 active">
-          <a class="sidebar-link" href="index.html">
+      <div class="sidebar">
+        <div class="sidebar-inner">
+          <!-- ### $Sidebar Header ### -->
+          <div class="sidebar-logo">
+            <div class="peers ai-c fxw-nw">
+              <div class="peer peer-greed">
+                <a class="sidebar-link td-n" href="index.html">
+                  <div class="peers ai-c fxw-nw">
+                    <div class="peer">
+                      <div class="logo">
+                        <img src="assets/static/images/logo.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="peer peer-greed">
+                      <h5 class="lh-1 mB-0 logo-text">SIBUR.Вагоны</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="peer">
+                <div class="mobile-toggle sidebar-toggle">
+                  <a href="" class="td-n">
+                    <i class="ti-arrow-circle-left"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ### $Sidebar Menu ### -->
+          <ul class="sidebar-menu scrollable pos-r">
+            <li class="nav-item mT-30 active">
+              <a class="sidebar-link" href="ui.html">
                 <span class="icon-holder">
-                  <i class="c-blue-500 ti-home"></i>
+                  <i class="ti-dashboard" style="color: #128c7e"></i>
                 </span>
-            <span class="title">Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class='sidebar-link' href="remont.html">
-                <span class="icon-holder">
-                  <i class="c-brown-500 ti-email"></i>
-                </span>
-            <span class="title">Email</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class='sidebar-link' href="compose.html">
-                <span class="icon-holder">
-                  <i class="c-blue-500 ti-share"></i>
-                </span>
-            <span class="title">Compose</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class='sidebar-link' href="calendar.html">
-                <span class="icon-holder">
-                  <i class="c-deep-orange-500 ti-calendar"></i>
-                </span>
-            <span class="title">Calendar</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class='sidebar-link' href="chat.html">
-                <span class="icon-holder">
-                  <i class="c-deep-purple-500 ti-comment-alt"></i>
-                </span>
-            <span class="title">Chat</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class='sidebar-link' href="charts.html">
-                <span class="icon-holder">
-                  <i class="c-indigo-500 ti-bar-chart"></i>
-                </span>
-            <span class="title">Charts</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class='sidebar-link' href="forms.html">
-                <span class="icon-holder">
-                  <i class="c-light-blue-500 ti-pencil"></i>
-                </span>
-            <span class="title">Forms</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="sidebar-link" href="ui.html">
-                <span class="icon-holder">
-                    <i class="c-pink-500 ti-palette"></i>
-                  </span>
-            <span class="title">UI Elements</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                  <i class="c-orange-500 ti-layout-list-thumb"></i>
-                </span>
-            <span class="title">Tables</span>
-            <span class="arrow">
-                  <i class="ti-angle-right"></i>
-                </span>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class='sidebar-link' href="basic-table.html">Basic Table</a>
-            </li>
-            <li>
-              <a class='sidebar-link' href="datatable.html">Data Table</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                    <i class="c-purple-500 ti-map"></i>
-                  </span>
-            <span class="title">Maps</span>
-            <span class="arrow">
-                    <i class="ti-angle-right"></i>
-                  </span>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="google-maps.html">Google Map</a>
-            </li>
-            <li>
-              <a href="vector-maps.html">Vector Map</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                    <i class="c-red-500 ti-files"></i>
-                  </span>
-            <span class="title">Pages</span>
-            <span class="arrow">
-                    <i class="ti-angle-right"></i>
-                  </span>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class='sidebar-link' href="blank.html">Blank</a>
-            </li>
-            <li>
-              <a class='sidebar-link' href="404.html">404</a>
-            </li>
-            <li>
-              <a class='sidebar-link' href="500.html">500</a>
-            </li>
-            <li>
-              <a class='sidebar-link' href="signin.html">Sign In</a>
-            </li>
-            <li>
-              <a class='sidebar-link' href="signup.html">Sign Up</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                  <i class="c-teal-500 ti-view-list-alt"></i>
-                </span>
-            <span class="title">Multiple Levels</span>
-            <span class="arrow">
-                  <i class="ti-angle-right"></i>
-                </span>
-          </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item dropdown">
-              <a href="javascript:void(0);">
-                <span>Menu Item</span>
+                <span class="title">Дашборд</span>
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a href="javascript:void(0);">
-                <span>Menu Item</span>
-                <span class="arrow">
-                      <i class="ti-angle-right"></i>
-                    </span>
+            <li class="nav-item">
+              <a class="sidebar-link" href="index.html">
+                <span class="icon-holder">
+                  <i class="ti-truck" style="color: #128c7e"></i>
+                </span>
+                <span class="title">Вагоны</span>
               </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="javascript:void(0);">Menu Item</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">Menu Item</a>
-                </li>
-              </ul>
+            </li>
+            <li class="nav-item">
+              <a class='sidebar-link' href="email.html">
+                <span class="icon-holder">
+                  <i class="ti-panel" style="color: #128c7e"></i>
+                </span>
+                <span class="title">На обслуживании</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class='sidebar-link' href="compose.html">
+                <span class="icon-holder">
+                  <i class="ti-stats-up" style="color: #128c7e"></i>
+                </span>
+                <span class="title">Оптимизации</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class='sidebar-link' href="calendar.html">
+                <span class="icon-holder">
+                  <i class="ti-calendar" style="color:#128c7e"></i>
+                </span>
+                <span class="title">Календарь</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class='sidebar-link' href="chat.html">
+                <span class="icon-holder">
+                  <i class="ti-comment-alt" style="color:#128c7e"></i>
+                </span>
+                <span class="title">Чат</span>
+              </a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -316,7 +605,7 @@
             </a>
           </li>
           <li class="search-input">
-            <input class="form-control" type="text" placeholder="Search...">
+            <input class="form-control" name="SEARCHER" type="text" placeholder="Search..." onchange="search();">
           </li>
         </ul>
         <ul class="nav-right">
@@ -529,66 +818,52 @@
           <div class="col-md-7">
             <div class="bgc-white p-20 bd">
               <h6 class="c-grey-900">На обслуживании:</h6>
-              <hr class="col-xs-12">
-              <div class="row" style="height: 80px;">
-                <div class="col-md-2">
-                  <img src="assets/static/images/cart.png" class="mimg" onclick="$('#demo').collapse()">
-                  <br>
-                  <a data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">
-                    <span style="font-family: HelveticaNeue-CondensedBold; color: lightgray; font-size: 10pt;">Id: 1488238</span></a>
-                </div>
+              <div class="messagelist"> </div>
 
-
-                <div class="col-md-5">
-                  <div class="row">
-                    <div class="col-md-6" style="height: 40px;"><span style="font-family: HelveticaNeue-CondensedBold;">Местоположение:</span></div>
-                    <div class="col-md-6" style="height: 40px;"><span style="font-family: HelveticaNeue-CondensedBold;">Статус:</span></div>
-                  </div>
-                  <div class="row" >
-                    <div class="col-md-6" style="height: 40px;">
-                      <span class="icon-holder"><i class="c-grey ti-location-pin"></i>&nbsp;</span>Галич
-                    </div>
-                    <div class="col-md-6" style="height: 40px;">
-                      <span class="icon-holder"><i class="c-grey ti-shift-right"></i>&nbsp;</span>Едет в депо
-
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div style="height: 40px;">
-                    <span style="font-family: HelveticaNeue-CondensedBold;">Осталось:</span>
-                  </div>
-                  <div style="height: 40px;">
-                    <span class="icon-holder"><i class="c-grey ti-calendar"></i>&nbsp;</span>6 дней
-
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="easy-pie-chart" data-size='70' data-percent="75" data-bar-color='#ff9800'>
-                    <span></span>
-                  </div>
-                </div>
-
-              </div>
-
-              <div id="demo" class="collapse">
-                <div class="row">
-                  <div class="col-md-12">
-                    <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Тип: </span>Высасывание<br>
-                    <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Времени с последнего ремонта: </span> 77 лет<br>
-                    <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Комметарий: </span>Плановый осмотр<br>
-
-                  </div>
-
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-md-4" style="position: fixed;">
             <div class="bgc-white p-20 bd">
-              <h6 class="c-grey-900">Area Chart</h6>
-              <div class="mT-30">
-                <canvas id="area-chart" height="220"></canvas>
+              <div style="margin-top: 10px;">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;color: #128c7e;border-color:#128c7e;">Станция</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
+                  <a class="dropdown-item" href="#" onclick="filter_city('Гатка')">Гатка</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Георгополь')">Георгополь</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Липовка')">Липовка</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Милта')">Милта</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Новорепное')">Новорепное</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Приморск')">Приморск</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Рожок')">Рожок</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Северный')">Северный</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Сосновка')">Сосновка</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Ясная поляна')">Ясная поляна</a>
+                  <a class="dropdown-item" href="#" onclick="filter_city('Все')">Все</a>
+
+                </div>
+              </div>
+
+              <!-- ===============second dropdown======================= -->
+              <div style="margin-top: 20px;">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;color: #128c7e;border-color:#128c7e;">Тип вагона</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
+                  <a class="dropdown-item" href="#">Газовые</a>
+                  <a class="dropdown-item" href="#">Нефтебензиновые</a>
+                  <a class="dropdown-item" href="#">Химические</a>
+                </div>
+              </div>
+
+
+
+              <div style="margin-top: 20px;margin-bottom: 10px;">
+                <!-- ===============third dropdown======================= -->
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;color: #128c7e;border-color:#128c7e; ">Сортировать по:</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
+                  <a class="dropdown-item" href="#">Станции</a>
+                  <a class="dropdown-item" href="#">Типу вагона</a>
+                  <a class="dropdown-item" href="#">Износу</a>
+                  <a class="dropdown-item" href="#">Ближайшему рейсу</a>
+                  <a class="dropdown-item" href="#">Ближайшему ремонту</a>
+                </div>
               </div>
             </div>
           </div>
