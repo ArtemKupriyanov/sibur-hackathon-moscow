@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "TTRangeSlider.h"
 #import "PNChart.h"
+#import <UserNotifications/UserNotifications.h>
 
 @interface FinanceViewController ()
 
@@ -25,6 +26,8 @@
 @property (strong, nonatomic) TTRangeSlider *slider;
 @property (strong, nonatomic) PNCircleChart *circleChart;
 @property (strong, nonatomic) PNPieChart *pieChart;
+
+@property (strong, nonatomic) NSArray<NSNumber *> *moneys;
 
 @end
 
@@ -49,8 +52,27 @@
 }
 
 - (void)rangeSlider:(TTRangeSlider *)sender didChangeSelectedMinimumValue:(float)selectedMinimum andMaximumValue:(float)selectedMaximum {
-    return;
+    //self.circleChart = nil;
+    //self.pieChart = nil;
+    NSUInteger min = selectedMinimum;
+    NSUInteger max = selectedMaximum;
+    
+    [self updateMoneyWithMin:min andMax:max];
+
+    //[self addRangeSlider];
+    //[self addCircleChart];
 }
+
+- (void)updateMoneyWithMin:(NSUInteger)min andMax:(NSUInteger)max {
+    NSUInteger total = 0;
+    
+    for (NSUInteger i = min; i < max; ++i) {
+        total += [self.moneys[i] intValue];
+    }
+    
+    self.money.text = [NSString stringWithFormat:@"%ld", total];
+}
+
 
 - (void)addRangeSlider {
     self.slider = [[TTRangeSlider alloc] initWithFrame:CGRectMake(22, 40, 300, 20)];
@@ -60,7 +82,6 @@
     
     //self.slider.center = self.sliderView.center;
     
-    self.slider.delegate = self;
     self.slider.minValue = 1;
     self.slider.maxValue = 31;
     
@@ -86,11 +107,11 @@
 
 - (void)addPieChart {
     NSArray *items = @[[PNPieChartDataItem dataItemWithValue:10 color:PNLightGreen],
-                       [PNPieChartDataItem dataItemWithValue:20 color:PNFreshGreen description:@"WWDC"],
-                       [PNPieChartDataItem dataItemWithValue:40 color:PNDeepGreen description:@"GOOG I/O"],
+                       [PNPieChartDataItem dataItemWithValue:20 color:PNFreshGreen],
+                       [PNPieChartDataItem dataItemWithValue:40 color:PNDeepGreen],
                        ];
     
-    self.pieChart = [[PNPieChart alloc] initWithFrame:CGRectMake(220, 20, 100.0, 100.0) items:items];
+    self.pieChart = [[PNPieChart alloc] initWithFrame:CGRectMake(220, 10, 115.0, 115.0) items:items];
     self.pieChart.descriptionTextColor = [UIColor whiteColor];
     self.pieChart.descriptionTextFont = [UIFont fontWithName:@"Avenir-Medium" size:11.0];
     self.pieChart.descriptionTextShadowColor = [UIColor clearColor];
@@ -109,13 +130,46 @@
     [self.downView addSubview:self.pieChart];
 }
 
+- (void)registerLocalNotifications {
+    [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        NSLog(@"granted: %d; error:%@\n", granted, error);
+    }];
+    
+    UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+    content.title = [NSString localizedUserNotificationStringForKey:@"Обслуживание завершено!" arguments:nil];
+    content.body = [NSString localizedUserNotificationStringForKey:@"Вагон №57463309 завершил прохождение Капитального Ремонта 20.05.2018 в 09:30 в Депо-Ленинское." arguments:nil];
+    
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.hour = 15;
+    components.minute = 07;
+    
+    UNCalendarNotificationTrigger *trigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
+    
+    // Create the request object.
+    UNNotificationRequest *request = [UNNotificationRequest
+                                      requestWithIdentifier:@"LNRequest" content:content trigger:trigger];
+    
+    [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        NSLog(@"%@", error);
+    }];
+    
+}
+
+- (void)initializeArrayData {
+    self.moneys = @[@83, @76, @90, @93, @53, @79, @81, @83, @76, @90, @93, @53, @79, @81, @83, @76, @90, @93, @53, @79, @81, @83, @76, @90, @93, @53, @79, @81, @83, @76, @90];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self registerLocalNotifications];
     [self configureRevealVC];
     [self configureViews];
     [self addRangeSlider];
     [self addCircleChart];
     [self addPieChart];
+    [self initializeArrayData];
+    [self updateMoneyWithMin:(NSUInteger)self.slider.selectedMinimum andMax:(NSUInteger)self.slider.selectedMaximum];
 }
 
 - (void)didReceiveMemoryWarning {

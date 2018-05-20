@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FSCalendar.h>
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController <FSCalendarDelegate, FSCalendarDataSource>
 
 @end

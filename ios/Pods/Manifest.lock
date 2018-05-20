@@ -1,4 +1,5 @@
 PODS:
+  - FSCalendar (2.7.9)
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
   - SVProgressHUD (2.2.5)
@@ -6,23 +7,26 @@ PODS:
   - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
+  - FSCalendar
   - PNChart
   - SVProgressHUD
   - TTRangeSlider
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - FSCalendar
     - PNChart
     - SVProgressHUD
     - TTRangeSlider
     - UICountingLabel
 
 SPEC CHECKSUMS:
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TTRangeSlider: 2f2ce4a33b32bb323c6575b9f5161c4664459c58
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 3d93d66648b7e9a09b8031cea11121bf71be9b26
+PODFILE CHECKSUM: 226148fb5c2354f7dc139344ea6ae697e20d5d50
 
 COCOAPODS: 1.5.0

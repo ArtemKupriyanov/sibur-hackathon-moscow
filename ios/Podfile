@@ -9,5 +9,6 @@ target 'SIBUR App' do
   pod 'SVProgressHUD'
   pod "TTRangeSlider"
   pod 'PNChart'
+  pod 'FSCalendar'
 
 end
