@@ -1,0 +1,6 @@
+module Pods_SIBUR_App [system] {
+  umbrella header "Pods-SIBUR App-umbrella.h"
+
+  export *
+  module * { export * }
+}
