@@ -14,6 +14,22 @@
         height: 50px;
       }
 
+      .parent77 {
+        position: relative;
+      }
+
+      .child77 {
+        width: 300px;
+        height: 100px;
+        padding: 20px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        margin: -70px 0 0 -170px;
+      }
+
       #loader {
         transition: all 0.3s ease-in-out;
         opacity: 1;
@@ -61,6 +77,8 @@
         }
       }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
   <body class="app">
     <!-- @TOC -->
@@ -84,11 +102,135 @@
     </div>
 
     <script>
-      window.addEventListener('load', () => {
+
+      function load_documents() {
+        var x_str = "[{},{},{\"breaks\": 3,\"distance_left\": 65,\"distance_ran\": 98765,\"id\": \"1488228228\",\"location\": \"Галич\",\"maintainces\": [{\"date\": \"22.03.2018\",\"depo\": \"Депо 1\",\"maintaince_type\": \"ОУМК\"},{\"date\": \"27.03.2018\", \"depo\": \"Депо 2\", \"maintaince_type\": \"ОУМК2\"}],\"next_maintaince\": {\"date\": \"22.03.2018\", \"maintaince_type\": \"ОУМК\"},\"next_ride\": {\"date\": \"22.02.2018\", \"location\": \"Иваново\"},\"part_of_time_to_next_mainaince_required\": 0.9,\"schedule\": [{\"date\": \"22.02.2018\", \"from\": \"Галич\", \"to\": \"Иваново\"},{\"date\": \"23.02.2018\", \"from\": \"Иваново\", \"to\": \"Хуйцы\"}],\"total_weight_transported\": 143}]";
+        var obj = JSON.parse(x_str);
+
+
+
+        var template = `<div class="message" city="Галич"><hr class="col-xs-12"><div class="row" style="height: 100px;">
+                    <div class="col-md-2">
+                      <img src="assets/static/images/cart.png" class="mimg" onclick="$('#demo').collapse()">
+                       <br>
+                      <a data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">
+                        <span style="font-family: HelveticaNeue-CondensedBold; color: lightgray; font-size: 10pt;">Id: 1488238</span></a>
+                    </div>
+
+
+                    <div class="col-md-5">
+                      <div class="row">
+                        <div class="col-md-6" style="height: 50px;"><span style="font-family: HelveticaNeue-CondensedBold;">Местоположение:</span></div>
+                        <div class="col-md-6" style="height: 50px;"><span style="font-family: HelveticaNeue-CondensedBold;">Cледующий рейс:</span></div>
+                      </div>
+                      <div class="row" >
+                        <div class="col-md-6" style="height: 50px;">
+                          <span class="icon-holder"><i class="c-grey ti-location-pin"></i>&nbsp;</span>Галич
+                        </div>
+                        <div class="col-md-6" style="height: 50px;">
+                          <span class="icon-holder"><i class="c-grey ti-calendar"></i>&nbsp;</span>22.02.2018<br>
+                          <span class="icon-holder"><i class="c-grey ti-map-alt"></i>&nbsp;</span>Иваново
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div style="height: 50px;">
+                      <span style="font-family: HelveticaNeue-CondensedBold;">Ближайшее обслуживание:</span>
+                      </div>
+                      <div style="height: 50px;">
+                        <span class="icon-holder"><i class="c-grey ti-calendar"></i>&nbsp;</span>22.03.2018<br>
+                        <!--<span class="icon-holder"><i class="c-grey ti-map-alt"></i>&nbsp;</span>Депо №3-->
+                        <span class="icon-holder"><i class="c-grey ti-info-alt"></i>&nbsp;</span>ОРВИ
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="easy-pie-chart" style="width: 100%;" data-size='80' data-percent="90" data-bar-color='#ff9800'>
+                        <span style="width: 100%; text-align: center;"></span>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="demo" class="collapse">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <span style="font-family: HelveticaNeue-CondensedBold; color: darkgrey; font-size: 10pt;">Расписание:</span>
+                        <table class="table table-sm" style="font-size: 9pt;">
+                          <tbody>
+                          <tr>
+                            <td>22.02</td>
+                            <td>Галич</td>
+                            <td>Иваново</td>
+                          </tr>
+                          <tr>
+                            <td>23.02</td>
+                            <td>Иваново</td>
+                            <td>Хуяново</td>
+                          </tr>
+                          <tr>
+                            <td>24.02</td>
+                            <td>Хуяново</td>
+                            <td>Тыпидрово</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-5">
+                        <span style="font-family: HelveticaNeue-CondensedBold; color: darkgrey; font-size: 10pt;">Обслуживание:</span>
+                        <table class="table table-sm" style="font-size: 9pt;">
+                          <tbody>
+                          <tr>
+                            <td>10.02</td>
+                            <td>Депо №3</td>
+                            <td>Окояние</td>
+                          </tr>
+
+                          <tr style="border-bottom-style: hidden;background-color:#eeeeee;">
+                            <td>27.02</td>
+                            <td>Депо №2</td>
+                            <td>Отбеливание</td>
+                          </tr>
+                          <tr style="background-color:#eeeeee;">
+                            <td>28.02</td>
+                            <td>Депо №2</td>
+                            <td>Очернение</td>
+                          </tr>
+                          <tr>
+                            <td>28.02</td>
+                            <td>Депо №3</td>
+                            <td>Покояниу</td>
+                          </tr>
+                          </trstyle>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-3"><br>
+                        <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Пробег: </span>5355км<br>
+                        <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Осталось: </span>78км<br>
+                        <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Пологи: </span>3шт<br>
+                        <span style="font-family: HelveticaNeue-CondensedBold; font-size: 10pt;">Перевез: </span>15т<br>
+
+                      </div>
+                    </div>
+                  </div></div>`;
+
+
+        for (var i = 0; i < obj.length;i++) {
+          $(".messagelist").append(template);
+        }
+
+      }
+      function filter_city(city) {
+        $('.message').hide();
+      }
+
+        window.addEventListener('load', () => {
         const loader = document.getElementById('loader');
         setTimeout(() => {
           loader.classList.add('fadeOut');
         }, 300);
+          load_documents();
       });
 
 
@@ -526,117 +668,56 @@
         <main class='main-content bgc-grey-100'>
           <div id='mainContent'>
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-9">
                 <div class="bgc-white p-20 bd">
                   <h6 class="c-grey-900">Вагоны</h6>
-                  <hr class="col-xs-12">
-                  <div class="row" style="height: 100px;">
-                    <div class="col-md-2">
-                      <img src="assets/static/images/cart.png" class="mimg" onclick="$('#demo').collapse()">
-                       <br>
-                      <a data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="demo">
-                        <span style="font-family: HelveticaNeue-CondensedBold; color: lightgray; font-size: 10pt;">Id: 1488238</span></a>
-                    </div>
+                  <div class="messagelist"> </div>
 
 
-                    <div class="col-md-5">
-                      <div class="row">
-                        <div class="col-md-6" style="height: 50px;"><span style="font-family: HelveticaNeue-CondensedBold;">Местоположение:</span></div>
-                        <div class="col-md-6" style="height: 50px;"><span style="font-family: HelveticaNeue-CondensedBold;">Cледующий рейс:</span></div>
-                      </div>
-                      <div class="row" >
-                        <div class="col-md-6" style="height: 50px;">
-                          <span class="icon-holder"><i class="c-grey ti-location-pin"></i>&nbsp;</span>Галич
-                        </div>
-                        <div class="col-md-6" style="height: 50px;">
-                          <span class="icon-holder"><i class="c-grey ti-calendar"></i>&nbsp;</span>22.02.2018
-                          <span class="icon-holder"><i class="c-grey ti-map-alt"></i>&nbsp;</span>Иваново
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div style="height: 50px;">
-                      <span style="font-family: HelveticaNeue-CondensedBold;">Ближайшее обслуживание:</span>
-                      </div>
-                      <div style="height: 50px;">
-                        <span class="icon-holder"><i class="c-grey ti-calendar"></i>&nbsp;</span>22.03.2018
-                        <!--<span class="icon-holder"><i class="c-grey ti-map-alt"></i>&nbsp;</span>Депо №3-->
-                        <span class="icon-holder"><i class="c-grey ti-info-alt"></i>&nbsp;</span>ОРВИ
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="easy-pie-chart" data-size='80' data-percent="90" data-bar-color='#ff9800'>
-                        <span></span>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div id="demo" class="collapse">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <span style="font-family: HelveticaNeue-CondensedBold; color: darkgrey; font-size: 10pt;">Расписание:</span>
-                        <table class="table table-sm" style="font-size: 9pt;">
-                          <tbody>
-                          <tr>
-                            <td>22.02</td>
-                            <td>Галич</td>
-                            <td>Иваново</td>
-                          </tr>
-                          <tr>
-                            <td>23.02</td>
-                            <td>Иваново</td>
-                            <td>Хуяново</td>
-                          </tr>
-                          <tr>
-                            <td>24.02</td>
-                            <td>Хуяново</td>
-                            <td>Тыпидрово</td>
-                          </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="col-md-5">
-                        <span style="font-family: HelveticaNeue-CondensedBold; color: darkgrey; font-size: 10pt;">Обслуживание:</span>
-                        <table class="table table-sm" style="font-size: 9pt;">
-                          <tbody>
-                          <tr>
-                            <td>10.02</td>
-                            <td>Депо №3</td>
-                            <td>Окояние</td>
-                          </tr>
-                          <tr>
-                            <td>15.02</td>
-                            <td>Депо №3</td>
-                            <td>Покояниу</td>
-                          </tr>
-                          <tr style="border-bottom-style: none;">
-                            <td>27.02</td>
-                            <td>Депо №2</td>
-                            <td>Отбеливание</td>
-                          </tr>
-                          <tr style="border-0;">
-                            <td>28.02</td>
-                            <td>Депо №2</td>
-                            <td>Очернение</td>
-                          </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="col-md-3">
-
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="col-md-4" style="position: fixed;">
+              <div class="col-md-2" style="position: fixed;">
                 <div class="bgc-white p-20 bd">
-                  <h6 class="c-grey-900">Area Chart</h6>
-                  <div class="mT-30">
-                    <canvas id="area-chart" height="220"></canvas>
+                  <div style="margin-top: 10px;">
+                  <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">Станция</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="#">Гатка</a>
+                    <a class="dropdown-item" href="#">Георгополь</a>
+                    <a class="dropdown-item" href="#">Липовка</a>
+                    <a class="dropdown-item" href="#">Милта</a>
+                    <a class="dropdown-item" href="#">Новорепное</a>
+                    <a class="dropdown-item" href="#">Приморск</a>
+                    <a class="dropdown-item" href="#">Рожок</a>
+                    <a class="dropdown-item" href="#">Северный</a>
+                    <a class="dropdown-item" href="#">Сосновка</a>
+                    <a class="dropdown-item" href="#">Ясная поляна</a>
                   </div>
+                  </div>
+
+                  <!-- ===============second dropdown======================= -->
+                  <div style="margin-top: 20px;">
+                  <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">Тип вагона</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="#">Газовые</a>
+                    <a class="dropdown-item" href="#">Нефтебензиновые</a>
+                    <a class="dropdown-item" href="#">Химические</a>
+                  </div>
+                  </div>
+
+
+
+                  <div style="margin-top: 20px;margin-bottom: 10px;">
+                  <!-- ===============third dropdown======================= -->
+                  <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">Сортировать по:</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="#">Станции</a>
+                    <a class="dropdown-item" href="#">Типу вагона</a>
+                    <a class="dropdown-item" href="#">Износу</a>
+                    <a class="dropdown-item" href="#">Ближайшему рейсу</a>
+                    <a class="dropdown-item" href="#">Ближайшему ремонту</a>
+                  </div>
+                  </div>
+
                 </div>
               </div>
               <div class="col-md-1"></div>
