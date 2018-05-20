@@ -7,90 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08708C06D88F412E72E4F6CCF7879B77 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DD1C2CC967A16998B1C322BECB9422 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		09D9097831C9FEA183EF7A817447BB53 /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F06E70A6A7037DAF96B121F56E51D2D /* PNScatterChartData.m */; };
-		0AC601D0442954B68462BEF274A838EB /* PNBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 61390871449E65D2459828DF60E798DB /* PNBar.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0B892692A603D8BCC8A8F01DDD275C8B /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F625A356DCA12B1292545A5C965232 /* PNScatterChart.m */; };
-		1139182DA97498D2831A8260BE6751D1 /* PNGenericChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B7C96C11D1593FC75FFA2ED2FF6E23 /* PNGenericChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1577F10389CE25DBE59F9AE0FA20E2B3 /* PNRadarChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 964E1D9AE95C1F3A1FED1F475737B0E2 /* PNRadarChartDataItem.m */; };
-		1F8FC9D30B33DA8AF440533E2B79EA84 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7430C521ECAFFF8BA888AADB5765E7DE /* UICountingLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2801AC5FBF04E910BA20276F903290E7 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F916E032B700ED30B95F145AE18E5A /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2BFF57BF6EB214641521CDAC3839AB29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		2FD4E5D8FC4A8A979B9B9F035FD60F8E /* TTRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AB8C2ADA4209AAF4534C0EFE061D71 /* TTRangeSlider-dummy.m */; };
-		37226C3D4EC6B4F5F2F7204C8DD57679 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF6D716010753046FCDCB0C18ADCA7 /* SVProgressAnimatedView.m */; };
+		03726A2701092DF653A3F69691427C9F /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E591FD52E4C8CC75F0FF3B452681CDE /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		077F8DF58ACF4F986B905FE014D74899 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA3730628F2BA6DF03307595A0EC9BA /* FSCalendarStickyHeader.m */; };
+		09D9097831C9FEA183EF7A817447BB53 /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3291C51E9F589673C4E3A01AA99E08 /* PNScatterChartData.m */; };
+		0AC601D0442954B68462BEF274A838EB /* PNBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C6BA1CC5FDDA4F082CD59C85897036 /* PNBar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0AFB14D88C991CB1034C6FA4E10811CB /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C290A391143CCB6D0A2B774E5C78108 /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B892692A603D8BCC8A8F01DDD275C8B /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A8887077E100F65DDDFD1D7360F19 /* PNScatterChart.m */; };
+		0D40C0709B934B36FC64F608CC4A867D /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFD398B73F0ABD2A934608ED47A705B /* FSCalendarTransitionCoordinator.m */; };
+		0D97DB1A4FA01593C546B8B512383A6D /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BBC1FE98DF4CCA8129F30E74F272FA /* FSCalendar.m */; };
+		109F8BE9437E595D73AE5A3E76AF670C /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AC210284A4AA563111AE1E62878BCE /* FSCalendarDelegationProxy.m */; };
+		1139182DA97498D2831A8260BE6751D1 /* PNGenericChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F9DDC4756103DF602C3CC5C5B982BD /* PNGenericChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1577F10389CE25DBE59F9AE0FA20E2B3 /* PNRadarChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9717211AD030272D3B9684C9433B5D1 /* PNRadarChartDataItem.m */; };
+		1F8FC9D30B33DA8AF440533E2B79EA84 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D662C4405FB17B56FEF519B735AD90 /* UICountingLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24B34D226FEC5C3005119801D46B5086 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C274453D62601208318A591ACD9B008 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24F9E325543E9789C9E39BD174B370D1 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B366DA6C5B2768871A5F2370FDAF5A /* FSCalendarAppearance.m */; };
+		2ACE0A924429B44E3751D04A42B24F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		2B8992743A10DE4E2AA150BCC31A0594 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA21D6FC8B6740CF62C01D780BD1D91 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3219E536CC0DC9C51CADA5AFCAA6B5D4 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A87C8C03AE4348665266DD623EF9C1C /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37A903C14DF36210C407AFEE8E2FF73E /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = ECFE228D21C8A92EED29D376EA6B68FF /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39A124C019D596E66F0659E092AD788D /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1681F41848E014B3065F13852D6370E6 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3E45CDF904843C63FCB380582ADF1F65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		3E4AC150F23FAB3650FE90693F7B426F /* PNScatterChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACD3DF9F41336D5D57F1F319AF7665C /* PNScatterChartDataItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3E7DAE243190225AF3B6B1DE457912A8 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7A339C28D981AC063996D42C674604 /* SVRadialGradientLayer.m */; };
-		44BEDBB67467AC59936D95E028317B51 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17CD90A1F9985181AF72C06E60F09D /* PNColor.m */; };
-		47C563FC156619F58C606540CE30D982 /* PNChartDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BB82FFFDF360CD41D2A0BFE63DA61AD /* PNChartDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4A86BE0174028E1B00350960B760AF47 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4028740708DD5E40A3C04FBEC0C5B274 /* PNChartLabel.m */; };
-		4E723CDC3A28C236857F43B7BEDDE104 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22853C0689A8520EC69F162D84A3BD0B /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4FB92891EE1AC4C69C84F4EF97E9F711 /* PNLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F866C0CE75F2ED2DBB6FAD24FB8C7A5 /* PNLineChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		529423995E2E3A9B31CFE1F50133162B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		5427E3234D428490BB66EC6EF61F058F /* PNLineChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = 19026FEB313A4E7687FA44AB918AD922 /* PNLineChartData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E4AC150F23FAB3650FE90693F7B426F /* PNScatterChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 822242A256ACDE456B538A47155DD0C4 /* PNScatterChartDataItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4216956C9DEFA9F8C8665FE54DB144C4 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B8E0C9258F9841276E396F007B6DF /* SVRadialGradientLayer.m */; };
+		44BEDBB67467AC59936D95E028317B51 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 251B296C3B35657D84DC3A4FF2590A65 /* PNColor.m */; };
+		46D23917019F701F94F79CD60B2326FD /* Pods-SIBUR App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BE96F8F02D7CFA4225D109FB69A827 /* Pods-SIBUR App-dummy.m */; };
+		47C563FC156619F58C606540CE30D982 /* PNChartDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B6750B8946DE0BBC59FA727AD07324 /* PNChartDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		491FBF522B718BA2E01C96B36B999B14 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 128764458DBC1C0501F3874B3E689215 /* FSCalendarExtensions.m */; };
+		4A286FA4D79A27A8071FF0AAADF5E5D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		4A86BE0174028E1B00350960B760AF47 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F15E23A3CA63E4E0152E1EE89CC80B /* PNChartLabel.m */; };
+		4E723CDC3A28C236857F43B7BEDDE104 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8C57271CEB3ECE29890AFA57928BCB /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4ECFB0A25A48DBC9A51CA794D8BACF93 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC219C2D87A3D7741A47C0CA7D55C78 /* SVIndefiniteAnimatedView.m */; };
+		4FB92891EE1AC4C69C84F4EF97E9F711 /* PNLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = AB08FCD2907F5559972655AD107F15FB /* PNLineChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50AF2DDE81CE72D6011E87C0966F9E29 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 999D5A3FDA26DB2680927C44C28CE5B6 /* FSCalendar-dummy.m */; };
+		5427E3234D428490BB66EC6EF61F058F /* PNLineChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = F0AC799950B0DEDC9BD75712AF6751C3 /* PNLineChartData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5663F974EC0C65D91071764B17F46CE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
-		581C4D407B3E2D056153EC5D6C456440 /* PNBarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F9B5F214C9F0CE7613545EF08EFAE7 /* PNBarChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		58BC5DC1F5CD5417379D6C23AFD43D6C /* PNPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 75116415C8F6F12B2D58B2BFFA7240D9 /* PNPieChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		624A60476E1BB9046DB006F6CD501753 /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A673E0CD2FC1F16D825CD6D9C4CD77F0 /* PNPieChartDataItem.m */; };
-		62CC42820EF4C6EAFC8296C5AF893A1A /* PNScatterChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A84AC5C6804817D5A82D7544C8D2B8CD /* PNScatterChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		63AB11A5E4106F71E026FDD3AE5C0819 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F487098385C3B21CE068E7404A3408A /* PNLineChartDataItem.m */; };
-		6857E6849C1FFA1607FC74148029092F /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D078EFA9199FBF3D27080DA762573 /* PNBar.m */; };
-		688B3060152D09ECBD2B19C6FE8C33D1 /* Pods-SIBUR App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BE96F8F02D7CFA4225D109FB69A827 /* Pods-SIBUR App-dummy.m */; };
-		69FD9A7363F0C5CD87085D6F74DDCA1B /* TTRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0231C56F3EEE4AE159AB513DECF7BD75 /* TTRangeSlider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6B46ACEE4DD1DCDE7EC53A046D9C644F /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B55C331FAEE7E254B4EEF04B0212A176 /* PNScatterChartDataItem.m */; };
-		6FD810FC9EB0917CF0EE40E7D0130BEB /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8257CE51A37BEE5AC57EDF9866F74F /* PNLineChart.m */; };
+		581C4D407B3E2D056153EC5D6C456440 /* PNBarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = BE56270BCE6D280198F64EAA3C77C704 /* PNBarChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58B87147E78A913B6B6AAD4CB63F7342 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
+		58BC5DC1F5CD5417379D6C23AFD43D6C /* PNPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D5F001E96C1F919889A59B3408CCD3 /* PNPieChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58C80A9F443FC1555F582553020A0F00 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A159448E59186A029709194D75515CDC /* TTRangeSlider.m */; };
+		5C6E5943DECD690C594EC91AC2F9000C /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FC712CC379AF8A7BF21717DD3540D450 /* FSCalendarDelegationFactory.m */; };
+		619A7962FCBE954A68D43BC84BA140A8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 86ECD1BFC2DD1E8A45A73BF6EDF52A0C /* SVProgressHUD.m */; };
+		624A60476E1BB9046DB006F6CD501753 /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA187A5CFECA65C990173E4FAE5118C /* PNPieChartDataItem.m */; };
+		62CC42820EF4C6EAFC8296C5AF893A1A /* PNScatterChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F5806AB07481CD31D80156C2B59936 /* PNScatterChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63AB11A5E4106F71E026FDD3AE5C0819 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 985F14616CB94C9CDC106124581D7056 /* PNLineChartDataItem.m */; };
+		659BD74F235B37266C6258E823DBE90F /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B6CC41F1962178834DA153124AF4DE8F /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66DA9AB377F8D421DD73E5EF4ECCB434 /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C557A817F74BDAB40B1B33561E0460D /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67CD851C0178154D5D126CCA33E9D37E /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209F23FEF3C5F8B0A3FAD4244C581AB /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6857E6849C1FFA1607FC74148029092F /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C4CD955C32446E12D1AB1814FCE327 /* PNBar.m */; };
+		6B46ACEE4DD1DCDE7EC53A046D9C644F /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF16BF1575B063A07438DF5FADD220 /* PNScatterChartDataItem.m */; };
+		6FD810FC9EB0917CF0EE40E7D0130BEB /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E93A9898BBD7E55F38A1FBACBCA57B7C /* PNLineChart.m */; };
 		7EED4B8422DBB5F789519374C8A5B6AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */; };
-		7EFFFADE8776EC1AA6BFE0367EB516A1 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 438B8C79AF947B76B3A3BED6A693DD36 /* SVProgressHUD-dummy.m */; };
-		7FD5D44ADD57BF55545D50A9C3E2C9B3 /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D93904B6049C1C31161BED03BA9B720 /* PNLineChartData.m */; };
-		85B1F90265137560CF2F34BF1E8D1768 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C762021227DB830FF10CD5B7A9BACFCC /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8C08442F2725A6102EE7FB97C59CC1BF /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A2B2450E04D04A7C25006BC0F9ACA4 /* SVIndefiniteAnimatedView.m */; };
-		8C2E6F154CEAD75E5B7109D2ACC2B6DE /* PNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B4615B002C27C36E0CA584AD9507AB6F /* PNColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		94449683AF899FAFDBD83F9BE300AF8C /* PNCircleChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A4E6113DA47D8E17F6B5F7EAE3B512 /* PNCircleChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		94C3712168B6120A28540BE54C58A5B7 /* PNLineChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8E8677A50E01F7FC0865F20410620D /* PNLineChartDataItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FD5D44ADD57BF55545D50A9C3E2C9B3 /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = EB428F84C6D5C1DF6F7D979F73F372AC /* PNLineChartData.m */; };
+		81AAEA25DEE0797E96A867B911F3C95E /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9F0FCBDC236C67950254B808974266 /* FSCalendarCollectionView.m */; };
+		86DD2ADBA9FEF0259575CF936021D345 /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = D619A742267698F01F77376311921C7A /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B41722F9D65F3E04D457C9E485341DF /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9C1030E8D336499F466AF527CB076F /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C2E6F154CEAD75E5B7109D2ACC2B6DE /* PNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2006EAE60329E7511F43955E1FB490D3 /* PNColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E5F485ABFE44AEF4BA2C3269001E4C4 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F91A4704B8809642F9DAB78D2765D5 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90BFFF21D80394853E60B333B457B457 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AA889C3C95DB6FECD7B6E0E73B757D13 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		94449683AF899FAFDBD83F9BE300AF8C /* PNCircleChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AD529AA7E3D4573C09B77464A6658A /* PNCircleChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		94C3712168B6120A28540BE54C58A5B7 /* PNLineChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9625A8D573881C42DA8062001D5546BC /* PNLineChartDataItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9CFECA7AD43C7E7B44B8E4BD0C0FC1AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		A194769547625E6C92529488F54DA105 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A1F897FFE01AB5E03714B1A65B6447 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A1FB833693D79BCA79ABEE96ABB2541C /* PNRadarChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 29898FDCE5765790EB0C77F8B340B4C6 /* PNRadarChartDataItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A354F7D1671D9863046A969B0994A700 /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BE4CE37C515109D2F40A7EE5844E6 /* PNCircleChart.m */; };
-		B8D160C00EEAA55BFCA2125123F0C052 /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A4E6F6A0028C1AF8983263A2FE5D54 /* PNGenericChart.m */; };
-		B93FDE9E8D7E8DC7C033FE3B6D3B5D1C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D2E61BB63E849B5E0F019A0280DD5 /* SVProgressHUD.m */; };
-		BB78E519255A17DB52C4AB308D165024 /* PNPieChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9DB98A98823E00477F5660631DA535 /* PNPieChartDataItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BB83E4E06443276601B1DD6F77F9C68E /* TTRangeSliderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C704E5693BA375E23B81BD0E6F61F5 /* TTRangeSliderDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C08D4C4DCE3EE4080598E55F10B86883 /* PNRadarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D608A6D753C62DC3AFE9E084AF86546 /* PNRadarChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C2AC5C6B13D7A4D85E499BAC58E2A1E0 /* PNChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A36F2F6821CD657B08BD5E71726B74BB /* PNChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C9489C6AABE47E1EFCFAB0DCD84EA401 /* PNChartLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE5E993804958287C0ECFB96F0A6396 /* PNChartLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D1664321FFCA6026D6E85978A1AFE3EC /* PNRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF683CF9460E1C146E15297720E60B4 /* PNRadarChart.m */; };
-		D6F38FE6103EAABCFBC5B4CA5245C6A3 /* PNScatterChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E53ECD36CA3E960D47729083ADF77EF /* PNScatterChartData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D813E5D4CDB2B46BE2D9DF09A90AC2C3 /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E1851021291E887E94DA2497C81C0A33 /* PNPieChart.m */; };
+		A1FB833693D79BCA79ABEE96ABB2541C /* PNRadarChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 245FAEA15FE982AAE33CEAE684E6D62C /* PNRadarChartDataItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2834D6539E684C4E3068878F5AA11A5 /* TTRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD21B343686FAF7E8CD4586314E5B27 /* TTRangeSlider-dummy.m */; };
+		A354F7D1671D9863046A969B0994A700 /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8C205DEB3C2696407809F90EB1CC9C /* PNCircleChart.m */; };
+		A6805D66A638F062BE71A9025336295E /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = F56184CDB3B73CB7CB58D657D8A77F71 /* FSCalendar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A814C2A9C5AEA25DDC467AD71C36F5A9 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A0284FC9494D0AAE5EBC76D79AE9082C /* FSCalendarConstants.m */; };
+		A82FA6CF76009F36A438D8BDC915F45C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		B038BCA9D3F6BC0D9166BB29013A3FF8 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E72BD92C45AF63F38913B4EB6AF098 /* FSCalendarCollectionViewLayout.m */; };
+		B195DF37A1C1218E39173963EC758E93 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
+		B4B5D7728C738176DB28ABFF6A53AAA1 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F92110507A981FE8D3EB987DAD992D6 /* SVProgressHUD-dummy.m */; };
+		B8D160C00EEAA55BFCA2125123F0C052 /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7748B57CBBB3E147CD4DC662B7960C /* PNGenericChart.m */; };
+		B972634BE8E3166A648DB5A72C55A676 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF90AE6165353FF523C8090AB17BD14 /* SVProgressAnimatedView.m */; };
+		BB125675D3166201E1EEF5D1DC0466F8 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2BBCC0A6770A06F89227B365EC6A5A /* FSCalendar+Deprecated.m */; };
+		BB78E519255A17DB52C4AB308D165024 /* PNPieChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A9BB00FC2D57F3BB3866A30FC2F3AA /* PNPieChartDataItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE3793D5E72DD56AC421BAEA489FED0D /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B4908DF2224C8201E590BF12B08960 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C08D4C4DCE3EE4080598E55F10B86883 /* PNRadarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D2D424E68712DE71EF64ED97703A62 /* PNRadarChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2AC5C6B13D7A4D85E499BAC58E2A1E0 /* PNChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CD670A0FC79238D5670F09AB93BE45 /* PNChart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C845FFC562135B894FCEF7E2A945223A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
+		C9489C6AABE47E1EFCFAB0DCD84EA401 /* PNChartLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 971491D98BC486B01389C1BFADE74A6E /* PNChartLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA8EDCDE6BCA742F935D15734497D11A /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1917D784F7B7A91E9C00231386B46F41 /* FSCalendarWeekdayView.m */; };
+		CCEAC9169F5AC9646CA1A28AD789C852 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92631277305E4573045D9586C50E5E3C /* FSCalendarScopeHandle.m */; };
+		CDD84A3393B0990A944690422573739A /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D4FB2BE42BDCF46EAEB63403668D8D /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1664321FFCA6026D6E85978A1AFE3EC /* PNRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B35620E91BCAA1A740ABCB92925067F /* PNRadarChart.m */; };
+		D6F38FE6103EAABCFBC5B4CA5245C6A3 /* PNScatterChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE9529651E0D5275BBC6C582F0A347F /* PNScatterChartData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D813E5D4CDB2B46BE2D9DF09A90AC2C3 /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F90411C3ADAB7F902AC4084DBD0DE1 /* PNPieChart.m */; };
+		DD4F064882DB920F215852E4A2C968A6 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC039C14259FE4D970AFBDC8A11BAC9 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DFC3C78711253349DB981066EDC6EF7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
-		EC6C9B809A9A894CAB42FABA607299EE /* PNChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E718BA882FB7AE255A0DFED949FB4C52 /* PNChart-dummy.m */; };
-		EDCEB6D707FF2288C67076D61DC83359 /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C9E252DC1087B657D94A018592C7BD /* UICountingLabel-dummy.m */; };
-		EF97AC0791C5D0728DBAC314A5A0B1D9 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C9485D53D29BD7B4DE42A6B1AB4F196A /* TTRangeSlider.m */; };
-		F1BA1B9BC4F6189730FD5F349EFDA9F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
-		F611AA85C69D5CCCC4EBCEEA3FCE8CA4 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02E3201690B7B99BAA20EF1A34BEE8 /* PNBarChart.m */; };
-		F7940E059B511A8921BE8CE14E5A9970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		E9FA5A008063361EA42CFFA71586407D /* TTRangeSliderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD08E860B91B3B4ADD7D8FC1ECC5DB0 /* TTRangeSliderDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC6C9B809A9A894CAB42FABA607299EE /* PNChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCB8C81DD0F319F023482601255FE1 /* PNChart-dummy.m */; };
+		EDCEB6D707FF2288C67076D61DC83359 /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 094B4FE702A309C23C011B749090450B /* UICountingLabel-dummy.m */; };
+		EE102234F91DE83178B4B782A7DE57F5 /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D66367418C34EC2373F8DC78EE491E /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF6D8BC2898FB9F1880E7C09C25AFBF4 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C12FEAA9ACA644BEE014D1FCF738B27 /* FSCalendarCalculator.m */; };
+		EF9FC3F55CB77CE5D5B762406D020416 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BE31D8645AE52C523938241B1CE7C5 /* FSCalendarCell.m */; };
+		F3AE6577715AC6BDA1F095AAA5A54A84 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EF9354C4AB32594BB48D2EF1CB6C /* FSCalendarHeaderView.m */; };
+		F4C867090C87B6D5A9B6D45E93BF4CEE /* TTRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A9B623181A2288808D012CF34B0CA2 /* TTRangeSlider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F611AA85C69D5CCCC4EBCEEA3FCE8CA4 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8858F5A7DAE1B7AF133308AA56295B31 /* PNBarChart.m */; };
+		FC3840FCD4F801FC3419804BAF2E41A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		FCD7DF0DD6153FE0BA4F249D75DCAA41 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FE91835670B14194FA5609005394F0 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1E939CEDA3B120F52693BEFC6C1C63A7 /* PBXContainerItemProxy */ = {
+		719C3F06B14A8DF58E2904128EDADBDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9D4A1B69057B2ACDCF903EC15F099E33;
-			remoteInfo = PNChart;
+			remoteGlobalIDString = 7E6D09DA8B1E7DD2FB43AAF4EED94144;
+			remoteInfo = FSCalendar;
 		};
-		1EE46CFD89978BF596B215BB0548A4A0 /* PBXContainerItemProxy */ = {
+		A11545D7F832D79213A8A16DD1FB0899 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EB31A05090143EAF02A3DE187E2CBA22;
-			remoteInfo = UICountingLabel;
-		};
-		66F867BA62BCAF20119D013C137BD813 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 56F2B8F7A77320A7C8DACD2CE6FA3083;
+			remoteGlobalIDString = AD6E3F4ED3D21FEAE66834815C6F6B82;
 			remoteInfo = SVProgressHUD;
+		};
+		C6EA30FAF9032C2E46AE0594D9FEE74A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9241DCD98FA92944AE3FA2F9D76559A;
+			remoteInfo = TTRangeSlider;
 		};
 		C9E220EA5540AEFB0ECD8F05CF8153CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -99,102 +135,171 @@
 			remoteGlobalIDString = EB31A05090143EAF02A3DE187E2CBA22;
 			remoteInfo = UICountingLabel;
 		};
-		D6E2467014BB9D4B97B0607FBC6F3443 /* PBXContainerItemProxy */ = {
+		D3D0B8D6FE49E4EBDFA712EF49EEB4A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C6FB677D959AD5D50FA6DC493C736AEE;
-			remoteInfo = TTRangeSlider;
+			remoteGlobalIDString = 9D4A1B69057B2ACDCF903EC15F099E33;
+			remoteInfo = PNChart;
+		};
+		E1442841C52680B22650A697E2BB05DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB31A05090143EAF02A3DE187E2CBA22;
+			remoteInfo = UICountingLabel;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0231C56F3EEE4AE159AB513DECF7BD75 /* TTRangeSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = Pod/Classes/TTRangeSlider.h; sourceTree = "<group>"; };
 		02A38D9B5FC19F1640D2609A43052271 /* Pods-SIBUR App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SIBUR App-frameworks.sh"; sourceTree = "<group>"; };
-		133C756AF4B9EFF996F5DF48812DCA09 /* libPNChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPNChart.a; path = libPNChart.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		094B4FE702A309C23C011B749090450B /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
+		0C557A817F74BDAB40B1B33561E0460D /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		0F92110507A981FE8D3EB987DAD992D6 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		128764458DBC1C0501F3874B3E689215 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		14D662C4405FB17B56FEF519B735AD90 /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		14F9DDC4756103DF602C3CC5C5B982BD /* PNGenericChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNGenericChart.h; path = PNChart/PNGenericChart.h; sourceTree = "<group>"; };
+		1681F41848E014B3065F13852D6370E6 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
 		168E3C8E97609077BE83BE1E30329C1F /* Pods-SIBUR App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SIBUR App-resources.sh"; sourceTree = "<group>"; };
+		16C6BA1CC5FDDA4F082CD59C85897036 /* PNBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBar.h; path = PNChart/PNBar.h; sourceTree = "<group>"; };
+		17D66367418C34EC2373F8DC78EE491E /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
 		1869DC0BEF8200B49C0FEC93729CE8CC /* Pods-SIBUR App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SIBUR App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		19026FEB313A4E7687FA44AB918AD922 /* PNLineChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartData.h; path = PNChart/PNLineChartData.h; sourceTree = "<group>"; };
-		1D608A6D753C62DC3AFE9E084AF86546 /* PNRadarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRadarChart.h; path = PNChart/PNRadarChart.h; sourceTree = "<group>"; };
-		1F487098385C3B21CE068E7404A3408A /* PNLineChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartDataItem.m; path = PNChart/PNLineChartDataItem.m; sourceTree = "<group>"; };
-		20A4E6113DA47D8E17F6B5F7EAE3B512 /* PNCircleChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNCircleChart.h; path = PNChart/PNCircleChart.h; sourceTree = "<group>"; };
-		22853C0689A8520EC69F162D84A3BD0B /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
-		29898FDCE5765790EB0C77F8B340B4C6 /* PNRadarChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRadarChartDataItem.h; path = PNChart/PNRadarChartDataItem.h; sourceTree = "<group>"; };
-		2C8257CE51A37BEE5AC57EDF9866F74F /* PNLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChart.m; path = PNChart/PNLineChart.m; sourceTree = "<group>"; };
-		2F0F38B5ED495B0555A1EA5E261454D6 /* PNChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PNChart.xcconfig; sourceTree = "<group>"; };
+		1917D784F7B7A91E9C00231386B46F41 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		2006EAE60329E7511F43955E1FB490D3 /* PNColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNColor.h; path = PNChart/PNColor.h; sourceTree = "<group>"; };
+		21D260350382ABEE6130D2D45CC13ED2 /* libFSCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFSCalendar.a; path = libFSCalendar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2209F23FEF3C5F8B0A3FAD4244C581AB /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		245FAEA15FE982AAE33CEAE684E6D62C /* PNRadarChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRadarChartDataItem.h; path = PNChart/PNRadarChartDataItem.h; sourceTree = "<group>"; };
+		251B296C3B35657D84DC3A4FF2590A65 /* PNColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNColor.m; path = PNChart/PNColor.m; sourceTree = "<group>"; };
+		27DCB8C81DD0F319F023482601255FE1 /* PNChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PNChart-dummy.m"; sourceTree = "<group>"; };
+		29A9BB00FC2D57F3BB3866A30FC2F3AA /* PNPieChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChartDataItem.h; path = PNChart/PNPieChartDataItem.h; sourceTree = "<group>"; };
+		29AD529AA7E3D4573C09B77464A6658A /* PNCircleChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNCircleChart.h; path = PNChart/PNCircleChart.h; sourceTree = "<group>"; };
+		2C274453D62601208318A591ACD9B008 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		3A17CD90A1F9985181AF72C06E60F09D /* PNColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNColor.m; path = PNChart/PNColor.m; sourceTree = "<group>"; };
-		3F866C0CE75F2ED2DBB6FAD24FB8C7A5 /* PNLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChart.h; path = PNChart/PNLineChart.h; sourceTree = "<group>"; };
-		3FA9125837D7EEA9E1BEB3E68B55E6F8 /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
-		4028740708DD5E40A3C04FBEC0C5B274 /* PNChartLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChartLabel.m; path = PNChart/PNChartLabel.m; sourceTree = "<group>"; };
-		438B8C79AF947B76B3A3BED6A693DD36 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		48AB8C2ADA4209AAF4534C0EFE061D71 /* TTRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTRangeSlider-dummy.m"; sourceTree = "<group>"; };
-		49A1F897FFE01AB5E03714B1A65B6447 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		4E53ECD36CA3E960D47729083ADF77EF /* PNScatterChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartData.h; path = PNChart/PNScatterChartData.h; sourceTree = "<group>"; };
-		5072932848284267919D086B0F63977D /* TTRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTRangeSlider-prefix.pch"; sourceTree = "<group>"; };
-		53A2B2450E04D04A7C25006BC0F9ACA4 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		34D5F001E96C1F919889A59B3408CCD3 /* PNPieChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChart.h; path = PNChart/PNPieChart.h; sourceTree = "<group>"; };
+		3BA3730628F2BA6DF03307595A0EC9BA /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		3C290A391143CCB6D0A2B774E5C78108 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		3CA21D6FC8B6740CF62C01D780BD1D91 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		44FE32B2A0DFE829B2F344293D85C341 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		46B366DA6C5B2768871A5F2370FDAF5A /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		4E9C1030E8D336499F466AF527CB076F /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
 		551EE7F5597294649B3840CBDBF5831E /* Pods-SIBUR App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SIBUR App.release.xcconfig"; sourceTree = "<group>"; };
-		61390871449E65D2459828DF60E798DB /* PNBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBar.h; path = PNChart/PNBar.h; sourceTree = "<group>"; };
-		6354466A365B43F79E2D6D0C3ACF9C6D /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		67C29681B6B08BBC0DF69F1AF5FDCA63 /* libTTRangeSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTTRangeSlider.a; path = libTTRangeSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ACD3DF9F41336D5D57F1F319AF7665C /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartDataItem.h; path = PNChart/PNScatterChartDataItem.h; sourceTree = "<group>"; };
-		6AF683CF9460E1C146E15297720E60B4 /* PNRadarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRadarChart.m; path = PNChart/PNRadarChart.m; sourceTree = "<group>"; };
-		6D93904B6049C1C31161BED03BA9B720 /* PNLineChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartData.m; path = PNChart/PNLineChartData.m; sourceTree = "<group>"; };
-		6F06E70A6A7037DAF96B121F56E51D2D /* PNScatterChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartData.m; path = PNChart/PNScatterChartData.m; sourceTree = "<group>"; };
-		7430C521ECAFFF8BA888AADB5765E7DE /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
-		75116415C8F6F12B2D58B2BFFA7240D9 /* PNPieChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChart.h; path = PNChart/PNPieChart.h; sourceTree = "<group>"; };
-		81BA8EC017B99B56673E2156A9FF027E /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
-		87C704E5693BA375E23B81BD0E6F61F5 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = Pod/Classes/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
-		88988789250C505420E3EEB569CB2353 /* libPods-SIBUR App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SIBUR App.a"; path = "libPods-SIBUR App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E02E3201690B7B99BAA20EF1A34BEE8 /* PNBarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBarChart.m; path = PNChart/PNBarChart.m; sourceTree = "<group>"; };
-		8ECF6D716010753046FCDCB0C18ADCA7 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		90B7C96C11D1593FC75FFA2ED2FF6E23 /* PNGenericChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNGenericChart.h; path = PNChart/PNGenericChart.h; sourceTree = "<group>"; };
+		58FE91835670B14194FA5609005394F0 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		5A3291C51E9F589673C4E3A01AA99E08 /* PNScatterChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartData.m; path = PNChart/PNScatterChartData.m; sourceTree = "<group>"; };
+		5DFD398B73F0ABD2A934608ED47A705B /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		5EEF16BF1575B063A07438DF5FADD220 /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartDataItem.m; path = PNChart/PNScatterChartDataItem.m; sourceTree = "<group>"; };
+		60CDDD3B0713E049722C698277837DF9 /* TTRangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTRangeSlider.xcconfig; sourceTree = "<group>"; };
+		63E72BD92C45AF63F38913B4EB6AF098 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		6A87C8C03AE4348665266DD623EF9C1C /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		73AC210284A4AA563111AE1E62878BCE /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		77581DC10FD5E3C0A658740EB9788508 /* libTTRangeSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTTRangeSlider.a; path = libTTRangeSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B4908DF2224C8201E590BF12B08960 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		79A9B623181A2288808D012CF34B0CA2 /* TTRangeSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = Pod/Classes/TTRangeSlider.h; sourceTree = "<group>"; };
+		7C445594B62B95D1CE7DADDE38079CCF /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
+		80CD670A0FC79238D5670F09AB93BE45 /* PNChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChart.h; path = PNChart/PNChart.h; sourceTree = "<group>"; };
+		822242A256ACDE456B538A47155DD0C4 /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartDataItem.h; path = PNChart/PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		86B39ED849A4152E455A78CCD7D8EDE9 /* PNChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNChart-prefix.pch"; sourceTree = "<group>"; };
+		86ECD1BFC2DD1E8A45A73BF6EDF52A0C /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		87402152CA13934E7274D8CC3393712E /* TTRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTRangeSlider-prefix.pch"; sourceTree = "<group>"; };
+		8858F5A7DAE1B7AF133308AA56295B31 /* PNBarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBarChart.m; path = PNChart/PNBarChart.m; sourceTree = "<group>"; };
+		8DC219C2D87A3D7741A47C0CA7D55C78 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		8E591FD52E4C8CC75F0FF3B452681CDE /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		8FE9529651E0D5275BBC6C582F0A347F /* PNScatterChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartData.h; path = PNChart/PNScatterChartData.h; sourceTree = "<group>"; };
+		92631277305E4573045D9586C50E5E3C /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		92F5806AB07481CD31D80156C2B59936 /* PNScatterChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChart.h; path = PNChart/PNScatterChart.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		964E1D9AE95C1F3A1FED1F475737B0E2 /* PNRadarChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRadarChartDataItem.m; path = PNChart/PNRadarChartDataItem.m; sourceTree = "<group>"; };
-		97C9E252DC1087B657D94A018592C7BD /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
-		99F625A356DCA12B1292545A5C965232 /* PNScatterChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChart.m; path = PNChart/PNScatterChart.m; sourceTree = "<group>"; };
-		9A8E8677A50E01F7FC0865F20410620D /* PNLineChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartDataItem.h; path = PNChart/PNLineChartDataItem.h; sourceTree = "<group>"; };
-		9AE5E993804958287C0ECFB96F0A6396 /* PNChartLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartLabel.h; path = PNChart/PNChartLabel.h; sourceTree = "<group>"; };
-		9BB82FFFDF360CD41D2A0BFE63DA61AD /* PNChartDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartDelegate.h; path = PNChart/PNChartDelegate.h; sourceTree = "<group>"; };
-		A0A5BDA77F6BAFB84DC879DE9D977111 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0B031724C49ED3817B7BF25559BB879 /* PNChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNChart-prefix.pch"; sourceTree = "<group>"; };
-		A36F2F6821CD657B08BD5E71726B74BB /* PNChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChart.h; path = PNChart/PNChart.h; sourceTree = "<group>"; };
-		A46BE4CE37C515109D2F40A7EE5844E6 /* PNCircleChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNCircleChart.m; path = PNChart/PNCircleChart.m; sourceTree = "<group>"; };
-		A673E0CD2FC1F16D825CD6D9C4CD77F0 /* PNPieChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChartDataItem.m; path = PNChart/PNPieChartDataItem.m; sourceTree = "<group>"; };
-		A84AC5C6804817D5A82D7544C8D2B8CD /* PNScatterChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChart.h; path = PNChart/PNScatterChart.h; sourceTree = "<group>"; };
-		A8A1ADC056368556986A62BE801B7716 /* TTRangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTRangeSlider.xcconfig; sourceTree = "<group>"; };
-		B4615B002C27C36E0CA584AD9507AB6F /* PNColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNColor.h; path = PNChart/PNColor.h; sourceTree = "<group>"; };
+		9625A8D573881C42DA8062001D5546BC /* PNLineChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartDataItem.h; path = PNChart/PNLineChartDataItem.h; sourceTree = "<group>"; };
+		962E081CBFE71390EF45AA74798ABABF /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		971491D98BC486B01389C1BFADE74A6E /* PNChartLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartLabel.h; path = PNChart/PNChartLabel.h; sourceTree = "<group>"; };
+		985F14616CB94C9CDC106124581D7056 /* PNLineChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartDataItem.m; path = PNChart/PNLineChartDataItem.m; sourceTree = "<group>"; };
+		98B6750B8946DE0BBC59FA727AD07324 /* PNChartDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartDelegate.h; path = PNChart/PNChartDelegate.h; sourceTree = "<group>"; };
+		999D5A3FDA26DB2680927C44C28CE5B6 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		9B35620E91BCAA1A740ABCB92925067F /* PNRadarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRadarChart.m; path = PNChart/PNRadarChart.m; sourceTree = "<group>"; };
+		9BF90AE6165353FF523C8090AB17BD14 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		9C12FEAA9ACA644BEE014D1FCF738B27 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		A0284FC9494D0AAE5EBC76D79AE9082C /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		A159448E59186A029709194D75515CDC /* TTRangeSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = Pod/Classes/TTRangeSlider.m; sourceTree = "<group>"; };
+		A4A06159D0D6BF739A705F1118DE2496 /* libPods-SIBUR App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SIBUR App.a"; path = "libPods-SIBUR App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8BE31D8645AE52C523938241B1CE7C5 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		A8D2D424E68712DE71EF64ED97703A62 /* PNRadarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRadarChart.h; path = PNChart/PNRadarChart.h; sourceTree = "<group>"; };
+		AA889C3C95DB6FECD7B6E0E73B757D13 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		AB08FCD2907F5559972655AD107F15FB /* PNLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChart.h; path = PNChart/PNLineChart.h; sourceTree = "<group>"; };
+		AE5B8E0C9258F9841276E396F007B6DF /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		B1C4CD955C32446E12D1AB1814FCE327 /* PNBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBar.m; path = PNChart/PNBar.m; sourceTree = "<group>"; };
+		B1F90411C3ADAB7F902AC4084DBD0DE1 /* PNPieChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChart.m; path = PNChart/PNPieChart.m; sourceTree = "<group>"; };
 		B527F6208F4637632C8F019C4388C62C /* Pods-SIBUR App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SIBUR App-acknowledgements.plist"; sourceTree = "<group>"; };
-		B55C331FAEE7E254B4EEF04B0212A176 /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartDataItem.m; path = PNChart/PNScatterChartDataItem.m; sourceTree = "<group>"; };
-		BB9DB98A98823E00477F5660631DA535 /* PNPieChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChartDataItem.h; path = PNChart/PNPieChartDataItem.h; sourceTree = "<group>"; };
-		BC7A339C28D981AC063996D42C674604 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		BC7C6AEAD7BAC572FC830E6BC5F75CCA /* libUICountingLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libUICountingLabel.a; path = libUICountingLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B633EF9354C4AB32594BB48D2EF1CB6C /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		B6CC41F1962178834DA153124AF4DE8F /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		B7D55782DE41F6B8C07737699FBF69D0 /* PNChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PNChart.xcconfig; sourceTree = "<group>"; };
+		BC9F0FCBDC236C67950254B808974266 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		BD7748B57CBBB3E147CD4DC662B7960C /* PNGenericChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNGenericChart.m; path = PNChart/PNGenericChart.m; sourceTree = "<group>"; };
+		BE56270BCE6D280198F64EAA3C77C704 /* PNBarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBarChart.h; path = PNChart/PNBarChart.h; sourceTree = "<group>"; };
+		C281A7DC4A680A8C15062FDE36E7C972 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BE96F8F02D7CFA4225D109FB69A827 /* Pods-SIBUR App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SIBUR App-dummy.m"; sourceTree = "<group>"; };
-		C36674E9C15FE4853B2E9E188D76DA45 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		C762021227DB830FF10CD5B7A9BACFCC /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		C9485D53D29BD7B4DE42A6B1AB4F196A /* TTRangeSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = Pod/Classes/TTRangeSlider.m; sourceTree = "<group>"; };
-		D45D2E61BB63E849B5E0F019A0280DD5 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		D8F916E032B700ED30B95F145AE18E5A /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		D9DD1C2CC967A16998B1C322BECB9422 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		DDBB9F179FF6C89D8C0721176731CC52 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		E1851021291E887E94DA2497C81C0A33 /* PNPieChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChart.m; path = PNChart/PNPieChart.m; sourceTree = "<group>"; };
+		C2F15E23A3CA63E4E0152E1EE89CC80B /* PNChartLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChartLabel.m; path = PNChart/PNChartLabel.m; sourceTree = "<group>"; };
+		C956F596BC70B81CC05BA66440292689 /* libPNChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPNChart.a; path = libPNChart.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9717211AD030272D3B9684C9433B5D1 /* PNRadarChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRadarChartDataItem.m; path = PNChart/PNRadarChartDataItem.m; sourceTree = "<group>"; };
+		CD323B6B0F3969D01DB0EA839CFFCA98 /* libUICountingLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libUICountingLabel.a; path = libUICountingLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD21B343686FAF7E8CD4586314E5B27 /* TTRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTRangeSlider-dummy.m"; sourceTree = "<group>"; };
+		CE2BBCC0A6770A06F89227B365EC6A5A /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		CFDF5D864379B96C2C9BDDD85668B151 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		D00A8887077E100F65DDDFD1D7360F19 /* PNScatterChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChart.m; path = PNChart/PNScatterChart.m; sourceTree = "<group>"; };
+		D619A742267698F01F77376311921C7A /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		D8BBC1FE98DF4CCA8129F30E74F272FA /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		DBA187A5CFECA65C990173E4FAE5118C /* PNPieChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChartDataItem.m; path = PNChart/PNPieChartDataItem.m; sourceTree = "<group>"; };
+		DD5A2E55A8E25F413402720D3BEC5598 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		DEC039C14259FE4D970AFBDC8A11BAC9 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
 		E1B28DA7FAA29E7F464C205A26849757 /* Pods-SIBUR App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SIBUR App.debug.xcconfig"; sourceTree = "<group>"; };
-		E5A4E6F6A0028C1AF8983263A2FE5D54 /* PNGenericChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNGenericChart.m; path = PNChart/PNGenericChart.m; sourceTree = "<group>"; };
+		E4D4FB2BE42BDCF46EAEB63403668D8D /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
 		E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E718BA882FB7AE255A0DFED949FB4C52 /* PNChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PNChart-dummy.m"; sourceTree = "<group>"; };
-		E89D078EFA9199FBF3D27080DA762573 /* PNBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBar.m; path = PNChart/PNBar.m; sourceTree = "<group>"; };
+		E93A9898BBD7E55F38A1FBACBCA57B7C /* PNLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChart.m; path = PNChart/PNLineChart.m; sourceTree = "<group>"; };
+		EAD08E860B91B3B4ADD7D8FC1ECC5DB0 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = Pod/Classes/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
+		EB428F84C6D5C1DF6F7D979F73F372AC /* PNLineChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartData.m; path = PNChart/PNLineChartData.m; sourceTree = "<group>"; };
 		ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F4F9B5F214C9F0CE7613545EF08EFAE7 /* PNBarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBarChart.h; path = PNChart/PNBarChart.h; sourceTree = "<group>"; };
+		ECFE228D21C8A92EED29D376EA6B68FF /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		F0AC799950B0DEDC9BD75712AF6751C3 /* PNLineChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartData.h; path = PNChart/PNLineChartData.h; sourceTree = "<group>"; };
+		F56184CDB3B73CB7CB58D657D8A77F71 /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		F869C2830698BA7A52D4A46B34D6C92D /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
+		F8F91A4704B8809642F9DAB78D2765D5 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		FC712CC379AF8A7BF21717DD3540D450 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
 		FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FE8C57271CEB3ECE29890AFA57928BCB /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		FF8C205DEB3C2696407809F90EB1CC9C /* PNCircleChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNCircleChart.m; path = PNChart/PNCircleChart.m; sourceTree = "<group>"; };
+		FFAD6F07C474FA6F05FA5C32881D8B08 /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66A81948F1BCE916A394F2FCC54FEA36 /* Frameworks */ = {
+		03739FBD8D0C90B7334631816FC1B2B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BFF57BF6EB214641521CDAC3839AB29 /* Foundation.framework in Frameworks */,
-				F1BA1B9BC4F6189730FD5F349EFDA9F7 /* QuartzCore.framework in Frameworks */,
+				A82FA6CF76009F36A438D8BDC915F45C /* Foundation.framework in Frameworks */,
+				C845FFC562135B894FCEF7E2A945223A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088A2E6AE0F7B2A8421F143FF1FE3C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACE0A924429B44E3751D04A42B24F0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FA6CD510EC41A59C499A989CCF7C50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A286FA4D79A27A8071FF0AAADF5E5D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A7A0E446C05D2A23EA263142656695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3840FCD4F801FC3419804BAF2E41A3 /* Foundation.framework in Frameworks */,
+				B195DF37A1C1218E39173963EC758E93 /* QuartzCore.framework in Frameworks */,
+				58B87147E78A913B6B6AAD4CB63F7342 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,22 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFECA7AD43C7E7B44B8E4BD0C0FC1AC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C4597B2DD2C55EC2EDFB9A4C7AA6B83 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				529423995E2E3A9B31CFE1F50133162B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91EA38DF23515097EB0CB3178F2254F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7940E059B511A8921BE8CE14E5A9970 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,22 +325,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		042F793E6075C9429DAB45812AB05F8C /* SVProgressHUD */ = {
+		05E95709AAA3077F383D1775015FD2F6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C762021227DB830FF10CD5B7A9BACFCC /* SVIndefiniteAnimatedView.h */,
-				53A2B2450E04D04A7C25006BC0F9ACA4 /* SVIndefiniteAnimatedView.m */,
-				D9DD1C2CC967A16998B1C322BECB9422 /* SVProgressAnimatedView.h */,
-				8ECF6D716010753046FCDCB0C18ADCA7 /* SVProgressAnimatedView.m */,
-				49A1F897FFE01AB5E03714B1A65B6447 /* SVProgressHUD.h */,
-				D45D2E61BB63E849B5E0F019A0280DD5 /* SVProgressHUD.m */,
-				D8F916E032B700ED30B95F145AE18E5A /* SVRadialGradientLayer.h */,
-				BC7A339C28D981AC063996D42C674604 /* SVRadialGradientLayer.m */,
-				1FD9F30B4F60B81F5B342A7FE87A9CFF /* Resources */,
-				F11B5E6334135C866A4790454E585298 /* Support Files */,
+				FFAD6F07C474FA6F05FA5C32881D8B08 /* UICountingLabel.xcconfig */,
+				094B4FE702A309C23C011B749090450B /* UICountingLabel-dummy.m */,
+				F869C2830698BA7A52D4A46B34D6C92D /* UICountingLabel-prefix.pch */,
 			);
-			name = SVProgressHUD;
-			path = SVProgressHUD;
+			name = "Support Files";
+			path = "../Target Support Files/UICountingLabel";
+			sourceTree = "<group>";
+		};
+		08CD1BBF5A9BB09FF65E5AA91EC446E8 /* UICountingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				14D662C4405FB17B56FEF519B735AD90 /* UICountingLabel.h */,
+				FE8C57271CEB3ECE29890AFA57928BCB /* UICountingLabel.m */,
+				05E95709AAA3077F383D1775015FD2F6 /* Support Files */,
+			);
+			name = UICountingLabel;
+			path = UICountingLabel;
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -262,45 +355,82 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1FD9F30B4F60B81F5B342A7FE87A9CFF /* Resources */ = {
+		2D7C8C29989B35B60AED33985F5CC99D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C36674E9C15FE4853B2E9E188D76DA45 /* SVProgressHUD.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		36C522AD59F3BCFCCAC92944FF0262AD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A8A1ADC056368556986A62BE801B7716 /* TTRangeSlider.xcconfig */,
-				48AB8C2ADA4209AAF4534C0EFE061D71 /* TTRangeSlider-dummy.m */,
-				5072932848284267919D086B0F63977D /* TTRangeSlider-prefix.pch */,
+				44FE32B2A0DFE829B2F344293D85C341 /* SVProgressHUD.xcconfig */,
+				0F92110507A981FE8D3EB987DAD992D6 /* SVProgressHUD-dummy.m */,
+				962E081CBFE71390EF45AA74798ABABF /* SVProgressHUD-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TTRangeSlider";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
-		531360B6A9877AD4208B510BA013CF32 /* Support Files */ = {
+		30A26A4E51F7DBB2B8C15E9B24235577 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3FA9125837D7EEA9E1BEB3E68B55E6F8 /* UICountingLabel.xcconfig */,
-				97C9E252DC1087B657D94A018592C7BD /* UICountingLabel-dummy.m */,
-				81BA8EC017B99B56673E2156A9FF027E /* UICountingLabel-prefix.pch */,
+				DF80B7DF183465927BF28B962D5E399F /* FSCalendar */,
+				6819D4CAF3EE9AFAC9C5D39C0E64A598 /* PNChart */,
+				F846DE1CE1B8EE6FC6F12604D096EF27 /* SVProgressHUD */,
+				5A406E71BEAE7ABFA56BD37E50A0F409 /* TTRangeSlider */,
+				08CD1BBF5A9BB09FF65E5AA91EC446E8 /* UICountingLabel */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/UICountingLabel";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		7888AB9A8AF4D9B44A44E8B0AF6EE911 /* UICountingLabel */ = {
+		5A406E71BEAE7ABFA56BD37E50A0F409 /* TTRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
-				7430C521ECAFFF8BA888AADB5765E7DE /* UICountingLabel.h */,
-				22853C0689A8520EC69F162D84A3BD0B /* UICountingLabel.m */,
-				531360B6A9877AD4208B510BA013CF32 /* Support Files */,
+				79A9B623181A2288808D012CF34B0CA2 /* TTRangeSlider.h */,
+				A159448E59186A029709194D75515CDC /* TTRangeSlider.m */,
+				EAD08E860B91B3B4ADD7D8FC1ECC5DB0 /* TTRangeSliderDelegate.h */,
+				86EF947A65F449C907222E695EB49682 /* Support Files */,
 			);
-			name = UICountingLabel;
-			path = UICountingLabel;
+			name = TTRangeSlider;
+			path = TTRangeSlider;
+			sourceTree = "<group>";
+		};
+		6819D4CAF3EE9AFAC9C5D39C0E64A598 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				16C6BA1CC5FDDA4F082CD59C85897036 /* PNBar.h */,
+				B1C4CD955C32446E12D1AB1814FCE327 /* PNBar.m */,
+				BE56270BCE6D280198F64EAA3C77C704 /* PNBarChart.h */,
+				8858F5A7DAE1B7AF133308AA56295B31 /* PNBarChart.m */,
+				80CD670A0FC79238D5670F09AB93BE45 /* PNChart.h */,
+				98B6750B8946DE0BBC59FA727AD07324 /* PNChartDelegate.h */,
+				971491D98BC486B01389C1BFADE74A6E /* PNChartLabel.h */,
+				C2F15E23A3CA63E4E0152E1EE89CC80B /* PNChartLabel.m */,
+				29AD529AA7E3D4573C09B77464A6658A /* PNCircleChart.h */,
+				FF8C205DEB3C2696407809F90EB1CC9C /* PNCircleChart.m */,
+				2006EAE60329E7511F43955E1FB490D3 /* PNColor.h */,
+				251B296C3B35657D84DC3A4FF2590A65 /* PNColor.m */,
+				14F9DDC4756103DF602C3CC5C5B982BD /* PNGenericChart.h */,
+				BD7748B57CBBB3E147CD4DC662B7960C /* PNGenericChart.m */,
+				AB08FCD2907F5559972655AD107F15FB /* PNLineChart.h */,
+				E93A9898BBD7E55F38A1FBACBCA57B7C /* PNLineChart.m */,
+				F0AC799950B0DEDC9BD75712AF6751C3 /* PNLineChartData.h */,
+				EB428F84C6D5C1DF6F7D979F73F372AC /* PNLineChartData.m */,
+				9625A8D573881C42DA8062001D5546BC /* PNLineChartDataItem.h */,
+				985F14616CB94C9CDC106124581D7056 /* PNLineChartDataItem.m */,
+				34D5F001E96C1F919889A59B3408CCD3 /* PNPieChart.h */,
+				B1F90411C3ADAB7F902AC4084DBD0DE1 /* PNPieChart.m */,
+				29A9BB00FC2D57F3BB3866A30FC2F3AA /* PNPieChartDataItem.h */,
+				DBA187A5CFECA65C990173E4FAE5118C /* PNPieChartDataItem.m */,
+				A8D2D424E68712DE71EF64ED97703A62 /* PNRadarChart.h */,
+				9B35620E91BCAA1A740ABCB92925067F /* PNRadarChart.m */,
+				245FAEA15FE982AAE33CEAE684E6D62C /* PNRadarChartDataItem.h */,
+				C9717211AD030272D3B9684C9433B5D1 /* PNRadarChartDataItem.m */,
+				92F5806AB07481CD31D80156C2B59936 /* PNScatterChart.h */,
+				D00A8887077E100F65DDDFD1D7360F19 /* PNScatterChart.m */,
+				8FE9529651E0D5275BBC6C582F0A347F /* PNScatterChartData.h */,
+				5A3291C51E9F589673C4E3A01AA99E08 /* PNScatterChartData.m */,
+				822242A256ACDE456B538A47155DD0C4 /* PNScatterChartDataItem.h */,
+				5EEF16BF1575B063A07438DF5FADD220 /* PNScatterChartDataItem.m */,
+				83B6484CE8953DD92D52ADE8609F5D60 /* Support Files */,
+			);
+			name = PNChart;
+			path = PNChart;
 			sourceTree = "<group>";
 		};
 		7ACFC17497F674751D77831955926E3E /* Pods-SIBUR App */ = {
@@ -318,15 +448,45 @@
 			path = "Target Support Files/Pods-SIBUR App";
 			sourceTree = "<group>";
 		};
+		7C1A5E610D87CF56CFB5273018D89FE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A2E55A8E25F413402720D3BEC5598 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				CD98F54AA4CCFB6F14FFC9D47F3B809B /* Pods */,
-				EE28839119D0A00190DBD7B3E20EBB67 /* Products */,
+				30A26A4E51F7DBB2B8C15E9B24235577 /* Pods */,
+				DFAFC29DAC453250B85B0C7073BDA062 /* Products */,
 				B7FEF63C664952356DE2133C871A7436 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		83B6484CE8953DD92D52ADE8609F5D60 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7D55782DE41F6B8C07737699FBF69D0 /* PNChart.xcconfig */,
+				27DCB8C81DD0F319F023482601255FE1 /* PNChart-dummy.m */,
+				86B39ED849A4152E455A78CCD7D8EDE9 /* PNChart-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PNChart";
+			sourceTree = "<group>";
+		};
+		86EF947A65F449C907222E695EB49682 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60CDDD3B0713E049722C698277837DF9 /* TTRangeSlider.xcconfig */,
+				CDD21B343686FAF7E8CD4586314E5B27 /* TTRangeSlider-dummy.m */,
+				87402152CA13934E7274D8CC3393712E /* TTRangeSlider-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTRangeSlider";
 			sourceTree = "<group>";
 		};
 		8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */ = {
@@ -340,18 +500,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		AB8A33DC05EC5DB73D9A6645792B86CC /* TTRangeSlider */ = {
-			isa = PBXGroup;
-			children = (
-				0231C56F3EEE4AE159AB513DECF7BD75 /* TTRangeSlider.h */,
-				C9485D53D29BD7B4DE42A6B1AB4F196A /* TTRangeSlider.m */,
-				87C704E5693BA375E23B81BD0E6F61F5 /* TTRangeSliderDelegate.h */,
-				36C522AD59F3BCFCCAC92944FF0262AD /* Support Files */,
-			);
-			name = TTRangeSlider;
-			path = TTRangeSlider;
-			sourceTree = "<group>";
-		};
 		B7FEF63C664952356DE2133C871A7436 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,97 +508,135 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BDD23991A552A7DD01A4ACB38E951EB7 /* Support Files */ = {
+		CCD4A8C69569CB93F826FAA64649ABC5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2F0F38B5ED495B0555A1EA5E261454D6 /* PNChart.xcconfig */,
-				E718BA882FB7AE255A0DFED949FB4C52 /* PNChart-dummy.m */,
-				A0B031724C49ED3817B7BF25559BB879 /* PNChart-prefix.pch */,
+				7C445594B62B95D1CE7DADDE38079CCF /* FSCalendar.xcconfig */,
+				999D5A3FDA26DB2680927C44C28CE5B6 /* FSCalendar-dummy.m */,
+				CFDF5D864379B96C2C9BDDD85668B151 /* FSCalendar-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/PNChart";
+			path = "../Target Support Files/FSCalendar";
 			sourceTree = "<group>";
 		};
-		CD98F54AA4CCFB6F14FFC9D47F3B809B /* Pods */ = {
+		DF80B7DF183465927BF28B962D5E399F /* FSCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				F84B47065AF334AC20F14CA0FA0AFC89 /* PNChart */,
-				042F793E6075C9429DAB45812AB05F8C /* SVProgressHUD */,
-				AB8A33DC05EC5DB73D9A6645792B86CC /* TTRangeSlider */,
-				7888AB9A8AF4D9B44A44E8B0AF6EE911 /* UICountingLabel */,
+				F56184CDB3B73CB7CB58D657D8A77F71 /* FSCalendar.h */,
+				D8BBC1FE98DF4CCA8129F30E74F272FA /* FSCalendar.m */,
+				CE2BBCC0A6770A06F89227B365EC6A5A /* FSCalendar+Deprecated.m */,
+				E4D4FB2BE42BDCF46EAEB63403668D8D /* FSCalendarAppearance.h */,
+				46B366DA6C5B2768871A5F2370FDAF5A /* FSCalendarAppearance.m */,
+				77B4908DF2224C8201E590BF12B08960 /* FSCalendarCalculator.h */,
+				9C12FEAA9ACA644BEE014D1FCF738B27 /* FSCalendarCalculator.m */,
+				AA889C3C95DB6FECD7B6E0E73B757D13 /* FSCalendarCell.h */,
+				A8BE31D8645AE52C523938241B1CE7C5 /* FSCalendarCell.m */,
+				8E591FD52E4C8CC75F0FF3B452681CDE /* FSCalendarCollectionView.h */,
+				BC9F0FCBDC236C67950254B808974266 /* FSCalendarCollectionView.m */,
+				B6CC41F1962178834DA153124AF4DE8F /* FSCalendarCollectionViewLayout.h */,
+				63E72BD92C45AF63F38913B4EB6AF098 /* FSCalendarCollectionViewLayout.m */,
+				4E9C1030E8D336499F466AF527CB076F /* FSCalendarConstants.h */,
+				A0284FC9494D0AAE5EBC76D79AE9082C /* FSCalendarConstants.m */,
+				ECFE228D21C8A92EED29D376EA6B68FF /* FSCalendarDelegationFactory.h */,
+				FC712CC379AF8A7BF21717DD3540D450 /* FSCalendarDelegationFactory.m */,
+				DEC039C14259FE4D970AFBDC8A11BAC9 /* FSCalendarDelegationProxy.h */,
+				73AC210284A4AA563111AE1E62878BCE /* FSCalendarDelegationProxy.m */,
+				1681F41848E014B3065F13852D6370E6 /* FSCalendarDynamicHeader.h */,
+				3C290A391143CCB6D0A2B774E5C78108 /* FSCalendarExtensions.h */,
+				128764458DBC1C0501F3874B3E689215 /* FSCalendarExtensions.m */,
+				D619A742267698F01F77376311921C7A /* FSCalendarHeaderView.h */,
+				B633EF9354C4AB32594BB48D2EF1CB6C /* FSCalendarHeaderView.m */,
+				17D66367418C34EC2373F8DC78EE491E /* FSCalendarScopeHandle.h */,
+				92631277305E4573045D9586C50E5E3C /* FSCalendarScopeHandle.m */,
+				3CA21D6FC8B6740CF62C01D780BD1D91 /* FSCalendarStickyHeader.h */,
+				3BA3730628F2BA6DF03307595A0EC9BA /* FSCalendarStickyHeader.m */,
+				0C557A817F74BDAB40B1B33561E0460D /* FSCalendarTransitionCoordinator.h */,
+				5DFD398B73F0ABD2A934608ED47A705B /* FSCalendarTransitionCoordinator.m */,
+				58FE91835670B14194FA5609005394F0 /* FSCalendarWeekdayView.h */,
+				1917D784F7B7A91E9C00231386B46F41 /* FSCalendarWeekdayView.m */,
+				CCD4A8C69569CB93F826FAA64649ABC5 /* Support Files */,
 			);
-			name = Pods;
+			name = FSCalendar;
+			path = FSCalendar;
 			sourceTree = "<group>";
 		};
-		EE28839119D0A00190DBD7B3E20EBB67 /* Products */ = {
+		DFAFC29DAC453250B85B0C7073BDA062 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				133C756AF4B9EFF996F5DF48812DCA09 /* libPNChart.a */,
-				88988789250C505420E3EEB569CB2353 /* libPods-SIBUR App.a */,
-				A0A5BDA77F6BAFB84DC879DE9D977111 /* libSVProgressHUD.a */,
-				67C29681B6B08BBC0DF69F1AF5FDCA63 /* libTTRangeSlider.a */,
-				BC7C6AEAD7BAC572FC830E6BC5F75CCA /* libUICountingLabel.a */,
+				21D260350382ABEE6130D2D45CC13ED2 /* libFSCalendar.a */,
+				C956F596BC70B81CC05BA66440292689 /* libPNChart.a */,
+				A4A06159D0D6BF739A705F1118DE2496 /* libPods-SIBUR App.a */,
+				C281A7DC4A680A8C15062FDE36E7C972 /* libSVProgressHUD.a */,
+				77581DC10FD5E3C0A658740EB9788508 /* libTTRangeSlider.a */,
+				CD323B6B0F3969D01DB0EA839CFFCA98 /* libUICountingLabel.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F11B5E6334135C866A4790454E585298 /* Support Files */ = {
+		F846DE1CE1B8EE6FC6F12604D096EF27 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				6354466A365B43F79E2D6D0C3ACF9C6D /* SVProgressHUD.xcconfig */,
-				438B8C79AF947B76B3A3BED6A693DD36 /* SVProgressHUD-dummy.m */,
-				DDBB9F179FF6C89D8C0721176731CC52 /* SVProgressHUD-prefix.pch */,
+				6A87C8C03AE4348665266DD623EF9C1C /* SVIndefiniteAnimatedView.h */,
+				8DC219C2D87A3D7741A47C0CA7D55C78 /* SVIndefiniteAnimatedView.m */,
+				F8F91A4704B8809642F9DAB78D2765D5 /* SVProgressAnimatedView.h */,
+				9BF90AE6165353FF523C8090AB17BD14 /* SVProgressAnimatedView.m */,
+				2C274453D62601208318A591ACD9B008 /* SVProgressHUD.h */,
+				86ECD1BFC2DD1E8A45A73BF6EDF52A0C /* SVProgressHUD.m */,
+				2209F23FEF3C5F8B0A3FAD4244C581AB /* SVRadialGradientLayer.h */,
+				AE5B8E0C9258F9841276E396F007B6DF /* SVRadialGradientLayer.m */,
+				7C1A5E610D87CF56CFB5273018D89FE2 /* Resources */,
+				2D7C8C29989B35B60AED33985F5CC99D /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
-			sourceTree = "<group>";
-		};
-		F84B47065AF334AC20F14CA0FA0AFC89 /* PNChart */ = {
-			isa = PBXGroup;
-			children = (
-				61390871449E65D2459828DF60E798DB /* PNBar.h */,
-				E89D078EFA9199FBF3D27080DA762573 /* PNBar.m */,
-				F4F9B5F214C9F0CE7613545EF08EFAE7 /* PNBarChart.h */,
-				8E02E3201690B7B99BAA20EF1A34BEE8 /* PNBarChart.m */,
-				A36F2F6821CD657B08BD5E71726B74BB /* PNChart.h */,
-				9BB82FFFDF360CD41D2A0BFE63DA61AD /* PNChartDelegate.h */,
-				9AE5E993804958287C0ECFB96F0A6396 /* PNChartLabel.h */,
-				4028740708DD5E40A3C04FBEC0C5B274 /* PNChartLabel.m */,
-				20A4E6113DA47D8E17F6B5F7EAE3B512 /* PNCircleChart.h */,
-				A46BE4CE37C515109D2F40A7EE5844E6 /* PNCircleChart.m */,
-				B4615B002C27C36E0CA584AD9507AB6F /* PNColor.h */,
-				3A17CD90A1F9985181AF72C06E60F09D /* PNColor.m */,
-				90B7C96C11D1593FC75FFA2ED2FF6E23 /* PNGenericChart.h */,
-				E5A4E6F6A0028C1AF8983263A2FE5D54 /* PNGenericChart.m */,
-				3F866C0CE75F2ED2DBB6FAD24FB8C7A5 /* PNLineChart.h */,
-				2C8257CE51A37BEE5AC57EDF9866F74F /* PNLineChart.m */,
-				19026FEB313A4E7687FA44AB918AD922 /* PNLineChartData.h */,
-				6D93904B6049C1C31161BED03BA9B720 /* PNLineChartData.m */,
-				9A8E8677A50E01F7FC0865F20410620D /* PNLineChartDataItem.h */,
-				1F487098385C3B21CE068E7404A3408A /* PNLineChartDataItem.m */,
-				75116415C8F6F12B2D58B2BFFA7240D9 /* PNPieChart.h */,
-				E1851021291E887E94DA2497C81C0A33 /* PNPieChart.m */,
-				BB9DB98A98823E00477F5660631DA535 /* PNPieChartDataItem.h */,
-				A673E0CD2FC1F16D825CD6D9C4CD77F0 /* PNPieChartDataItem.m */,
-				1D608A6D753C62DC3AFE9E084AF86546 /* PNRadarChart.h */,
-				6AF683CF9460E1C146E15297720E60B4 /* PNRadarChart.m */,
-				29898FDCE5765790EB0C77F8B340B4C6 /* PNRadarChartDataItem.h */,
-				964E1D9AE95C1F3A1FED1F475737B0E2 /* PNRadarChartDataItem.m */,
-				A84AC5C6804817D5A82D7544C8D2B8CD /* PNScatterChart.h */,
-				99F625A356DCA12B1292545A5C965232 /* PNScatterChart.m */,
-				4E53ECD36CA3E960D47729083ADF77EF /* PNScatterChartData.h */,
-				6F06E70A6A7037DAF96B121F56E51D2D /* PNScatterChartData.m */,
-				6ACD3DF9F41336D5D57F1F319AF7665C /* PNScatterChartDataItem.h */,
-				B55C331FAEE7E254B4EEF04B0212A176 /* PNScatterChartDataItem.m */,
-				BDD23991A552A7DD01A4ACB38E951EB7 /* Support Files */,
-			);
-			name = PNChart;
-			path = PNChart;
+			name = SVProgressHUD;
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4929D1AE60CD18810DCBEBCC1E4115B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C867090C87B6D5A9B6D45E93BF4CEE /* TTRangeSlider.h in Headers */,
+				E9FA5A008063361EA42CFFA71586407D /* TTRangeSliderDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81A2997CF01925282B9D45646ACD377F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3219E536CC0DC9C51CADA5AFCAA6B5D4 /* SVIndefiniteAnimatedView.h in Headers */,
+				8E5F485ABFE44AEF4BA2C3269001E4C4 /* SVProgressAnimatedView.h in Headers */,
+				24B34D226FEC5C3005119801D46B5086 /* SVProgressHUD.h in Headers */,
+				67CD851C0178154D5D126CCA33E9D37E /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDCCD00FFD11CE8E8F860F9BF087335 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6805D66A638F062BE71A9025336295E /* FSCalendar.h in Headers */,
+				CDD84A3393B0990A944690422573739A /* FSCalendarAppearance.h in Headers */,
+				BE3793D5E72DD56AC421BAEA489FED0D /* FSCalendarCalculator.h in Headers */,
+				90BFFF21D80394853E60B333B457B457 /* FSCalendarCell.h in Headers */,
+				03726A2701092DF653A3F69691427C9F /* FSCalendarCollectionView.h in Headers */,
+				659BD74F235B37266C6258E823DBE90F /* FSCalendarCollectionViewLayout.h in Headers */,
+				8B41722F9D65F3E04D457C9E485341DF /* FSCalendarConstants.h in Headers */,
+				37A903C14DF36210C407AFEE8E2FF73E /* FSCalendarDelegationFactory.h in Headers */,
+				DD4F064882DB920F215852E4A2C968A6 /* FSCalendarDelegationProxy.h in Headers */,
+				39A124C019D596E66F0659E092AD788D /* FSCalendarDynamicHeader.h in Headers */,
+				0AFB14D88C991CB1034C6FA4E10811CB /* FSCalendarExtensions.h in Headers */,
+				86DD2ADBA9FEF0259575CF936021D345 /* FSCalendarHeaderView.h in Headers */,
+				EE102234F91DE83178B4B782A7DE57F5 /* FSCalendarScopeHandle.h in Headers */,
+				2B8992743A10DE4E2AA150BCC31A0594 /* FSCalendarStickyHeader.h in Headers */,
+				66DA9AB377F8D421DD73E5EF4ECCB434 /* FSCalendarTransitionCoordinator.h in Headers */,
+				FCD7DF0DD6153FE0BA4F249D75DCAA41 /* FSCalendarWeekdayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92AA2A7799626C9AF8697C31F0D83095 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,17 +662,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEED6818D3602AE54A63CA6B1187DBC1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85B1F90265137560CF2F34BF1E8D1768 /* SVIndefiniteAnimatedView.h in Headers */,
-				08708C06D88F412E72E4F6CCF7879B77 /* SVProgressAnimatedView.h in Headers */,
-				A194769547625E6C92529488F54DA105 /* SVProgressHUD.h in Headers */,
-				2801AC5FBF04E910BA20276F903290E7 /* SVRadialGradientLayer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6471DAA9D3110CD855BE6DFA4F1E48C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,33 +670,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF416FDEC6E129949303E9B82397DC20 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69FD9A7363F0C5CD87085D6F74DDCA1B /* TTRangeSlider.h in Headers */,
-				BB83E4E06443276601B1DD6F77F9C68E /* TTRangeSliderDelegate.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		56F2B8F7A77320A7C8DACD2CE6FA3083 /* SVProgressHUD */ = {
+		70B5EF51F9E2C13973E2C8CD5B9C1BBD /* Pods-SIBUR App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CAEDDBE93843214494C2F707F620696 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildConfigurationList = 603B0FC40EA4EC64E8029E2D0CEA2235 /* Build configuration list for PBXNativeTarget "Pods-SIBUR App" */;
 			buildPhases = (
-				E0E3A858B09BA636FC98DD4817634994 /* Sources */,
-				66A81948F1BCE916A394F2FCC54FEA36 /* Frameworks */,
-				BEED6818D3602AE54A63CA6B1187DBC1 /* Headers */,
+				E185C37BD66E2A57991374ADA37CD4C1 /* Sources */,
+				088A2E6AE0F7B2A8421F143FF1FE3C7B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20BA577940232A567E1440A68D882D97 /* PBXTargetDependency */,
+				5C3D9A1F06B0127901699D13FCA21071 /* PBXTargetDependency */,
+				C5F247863EFAC6FCAAF67DD3BDB46329 /* PBXTargetDependency */,
+				6655649D039057F2C317F39DD5E01080 /* PBXTargetDependency */,
+				721FF6C34212EB71A8D1678AB5A1BC90 /* PBXTargetDependency */,
+			);
+			name = "Pods-SIBUR App";
+			productName = "Pods-SIBUR App";
+			productReference = A4A06159D0D6BF739A705F1118DE2496 /* libPods-SIBUR App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7E6D09DA8B1E7DD2FB43AAF4EED94144 /* FSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB688027A282174A05B9B5C2F69DCF00 /* Build configuration list for PBXNativeTarget "FSCalendar" */;
+			buildPhases = (
+				C22E544F7938EE0CFC9CF9F4FC5605D4 /* Sources */,
+				30A7A0E446C05D2A23EA263142656695 /* Frameworks */,
+				8CDCCD00FFD11CE8E8F860F9BF087335 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SVProgressHUD;
-			productName = SVProgressHUD;
-			productReference = A0A5BDA77F6BAFB84DC879DE9D977111 /* libSVProgressHUD.a */;
+			name = FSCalendar;
+			productName = FSCalendar;
+			productReference = 21D260350382ABEE6130D2D45CC13ED2 /* libFSCalendar.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9D4A1B69057B2ACDCF903EC15F099E33 /* PNChart */ = {
@@ -539,44 +726,24 @@
 			);
 			name = PNChart;
 			productName = PNChart;
-			productReference = 133C756AF4B9EFF996F5DF48812DCA09 /* libPNChart.a */;
+			productReference = C956F596BC70B81CC05BA66440292689 /* libPNChart.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C6FB677D959AD5D50FA6DC493C736AEE /* TTRangeSlider */ = {
+		AD6E3F4ED3D21FEAE66834815C6F6B82 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4362FCF98BCC09D1A07F5CF9FA15B25 /* Build configuration list for PBXNativeTarget "TTRangeSlider" */;
+			buildConfigurationList = 7426A34D13151C6D8733FB219AA0E298 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				74CE521039AE82AEF58D2F069A11AB64 /* Sources */,
-				91EA38DF23515097EB0CB3178F2254F2 /* Frameworks */,
-				EF416FDEC6E129949303E9B82397DC20 /* Headers */,
+				5BD0A3EDFC3C8DB0F3C773B352DCE085 /* Sources */,
+				03739FBD8D0C90B7334631816FC1B2B2 /* Frameworks */,
+				81A2997CF01925282B9D45646ACD377F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TTRangeSlider;
-			productName = TTRangeSlider;
-			productReference = 67C29681B6B08BBC0DF69F1AF5FDCA63 /* libTTRangeSlider.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E8120C0050B0D6663F3033D50EBD6891 /* Pods-SIBUR App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 384CD0735E6A8B1F06E2BB576A020521 /* Build configuration list for PBXNativeTarget "Pods-SIBUR App" */;
-			buildPhases = (
-				0D606CA89F52246C9BB70FA84B74E186 /* Sources */,
-				8C4597B2DD2C55EC2EDFB9A4C7AA6B83 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				15C2073B063C4262225225E4A6A1D17D /* PBXTargetDependency */,
-				AAB28914C0F6BAC083B745C74BAC0C34 /* PBXTargetDependency */,
-				736ECCC1775D7C67985437BBF0BFD3D9 /* PBXTargetDependency */,
-				CEF5B6492D1911D56196493898DBADB9 /* PBXTargetDependency */,
-			);
-			name = "Pods-SIBUR App";
-			productName = "Pods-SIBUR App";
-			productReference = 88988789250C505420E3EEB569CB2353 /* libPods-SIBUR App.a */;
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = C281A7DC4A680A8C15062FDE36E7C972 /* libSVProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		EB31A05090143EAF02A3DE187E2CBA22 /* UICountingLabel */ = {
@@ -593,7 +760,24 @@
 			);
 			name = UICountingLabel;
 			productName = UICountingLabel;
-			productReference = BC7C6AEAD7BAC572FC830E6BC5F75CCA /* libUICountingLabel.a */;
+			productReference = CD323B6B0F3969D01DB0EA839CFFCA98 /* libUICountingLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F9241DCD98FA92944AE3FA2F9D76559A /* TTRangeSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500F30A1B0C1E7D1571997BD165813D9 /* Build configuration list for PBXNativeTarget "TTRangeSlider" */;
+			buildPhases = (
+				C2F01A17E5ACD36B8E62DFDBFD63790C /* Sources */,
+				19FA6CD510EC41A59C499A989CCF7C50 /* Frameworks */,
+				4929D1AE60CD18810DCBEBCC1E4115B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTRangeSlider;
+			productName = TTRangeSlider;
+			productReference = 77581DC10FD5E3C0A658740EB9788508 /* libTTRangeSlider.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -613,28 +797,21 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EE28839119D0A00190DBD7B3E20EBB67 /* Products */;
+			productRefGroup = DFAFC29DAC453250B85B0C7073BDA062 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7E6D09DA8B1E7DD2FB43AAF4EED94144 /* FSCalendar */,
 				9D4A1B69057B2ACDCF903EC15F099E33 /* PNChart */,
-				E8120C0050B0D6663F3033D50EBD6891 /* Pods-SIBUR App */,
-				56F2B8F7A77320A7C8DACD2CE6FA3083 /* SVProgressHUD */,
-				C6FB677D959AD5D50FA6DC493C736AEE /* TTRangeSlider */,
+				70B5EF51F9E2C13973E2C8CD5B9C1BBD /* Pods-SIBUR App */,
+				AD6E3F4ED3D21FEAE66834815C6F6B82 /* SVProgressHUD */,
+				F9241DCD98FA92944AE3FA2F9D76559A /* TTRangeSlider */,
 				EB31A05090143EAF02A3DE187E2CBA22 /* UICountingLabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D606CA89F52246C9BB70FA84B74E186 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				688B3060152D09ECBD2B19C6FE8C33D1 /* Pods-SIBUR App-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		45C44BD1A93E0267EE3D09458AE97D15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -644,24 +821,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74CE521039AE82AEF58D2F069A11AB64 /* Sources */ = {
+		5BD0A3EDFC3C8DB0F3C773B352DCE085 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD4E5D8FC4A8A979B9B9F035FD60F8E /* TTRangeSlider-dummy.m in Sources */,
-				EF97AC0791C5D0728DBAC314A5A0B1D9 /* TTRangeSlider.m in Sources */,
+				4ECFB0A25A48DBC9A51CA794D8BACF93 /* SVIndefiniteAnimatedView.m in Sources */,
+				B972634BE8E3166A648DB5A72C55A676 /* SVProgressAnimatedView.m in Sources */,
+				B4B5D7728C738176DB28ABFF6A53AAA1 /* SVProgressHUD-dummy.m in Sources */,
+				619A7962FCBE954A68D43BC84BA140A8 /* SVProgressHUD.m in Sources */,
+				4216956C9DEFA9F8C8665FE54DB144C4 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0E3A858B09BA636FC98DD4817634994 /* Sources */ = {
+		C22E544F7938EE0CFC9CF9F4FC5605D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C08442F2725A6102EE7FB97C59CC1BF /* SVIndefiniteAnimatedView.m in Sources */,
-				37226C3D4EC6B4F5F2F7204C8DD57679 /* SVProgressAnimatedView.m in Sources */,
-				7EFFFADE8776EC1AA6BFE0367EB516A1 /* SVProgressHUD-dummy.m in Sources */,
-				B93FDE9E8D7E8DC7C033FE3B6D3B5D1C /* SVProgressHUD.m in Sources */,
-				3E7DAE243190225AF3B6B1DE457912A8 /* SVRadialGradientLayer.m in Sources */,
+				BB125675D3166201E1EEF5D1DC0466F8 /* FSCalendar+Deprecated.m in Sources */,
+				50AF2DDE81CE72D6011E87C0966F9E29 /* FSCalendar-dummy.m in Sources */,
+				0D97DB1A4FA01593C546B8B512383A6D /* FSCalendar.m in Sources */,
+				24F9E325543E9789C9E39BD174B370D1 /* FSCalendarAppearance.m in Sources */,
+				EF6D8BC2898FB9F1880E7C09C25AFBF4 /* FSCalendarCalculator.m in Sources */,
+				EF9FC3F55CB77CE5D5B762406D020416 /* FSCalendarCell.m in Sources */,
+				81AAEA25DEE0797E96A867B911F3C95E /* FSCalendarCollectionView.m in Sources */,
+				B038BCA9D3F6BC0D9166BB29013A3FF8 /* FSCalendarCollectionViewLayout.m in Sources */,
+				A814C2A9C5AEA25DDC467AD71C36F5A9 /* FSCalendarConstants.m in Sources */,
+				5C6E5943DECD690C594EC91AC2F9000C /* FSCalendarDelegationFactory.m in Sources */,
+				109F8BE9437E595D73AE5A3E76AF670C /* FSCalendarDelegationProxy.m in Sources */,
+				491FBF522B718BA2E01C96B36B999B14 /* FSCalendarExtensions.m in Sources */,
+				F3AE6577715AC6BDA1F095AAA5A54A84 /* FSCalendarHeaderView.m in Sources */,
+				CCEAC9169F5AC9646CA1A28AD789C852 /* FSCalendarScopeHandle.m in Sources */,
+				077F8DF58ACF4F986B905FE014D74899 /* FSCalendarStickyHeader.m in Sources */,
+				0D40C0709B934B36FC64F608CC4A867D /* FSCalendarTransitionCoordinator.m in Sources */,
+				CA8EDCDE6BCA742F935D15734497D11A /* FSCalendarWeekdayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F01A17E5ACD36B8E62DFDBFD63790C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2834D6539E684C4E3068878F5AA11A5 /* TTRangeSlider-dummy.m in Sources */,
+				58C80A9F443FC1555F582553020A0F00 /* TTRangeSlider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E185C37BD66E2A57991374ADA37CD4C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D23917019F701F94F79CD60B2326FD /* Pods-SIBUR App-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,29 +901,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		15C2073B063C4262225225E4A6A1D17D /* PBXTargetDependency */ = {
+		20BA577940232A567E1440A68D882D97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSCalendar;
+			target = 7E6D09DA8B1E7DD2FB43AAF4EED94144 /* FSCalendar */;
+			targetProxy = 719C3F06B14A8DF58E2904128EDADBDA /* PBXContainerItemProxy */;
+		};
+		5C3D9A1F06B0127901699D13FCA21071 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PNChart;
 			target = 9D4A1B69057B2ACDCF903EC15F099E33 /* PNChart */;
-			targetProxy = 1E939CEDA3B120F52693BEFC6C1C63A7 /* PBXContainerItemProxy */;
+			targetProxy = D3D0B8D6FE49E4EBDFA712EF49EEB4A9 /* PBXContainerItemProxy */;
 		};
-		736ECCC1775D7C67985437BBF0BFD3D9 /* PBXTargetDependency */ = {
+		6655649D039057F2C317F39DD5E01080 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TTRangeSlider;
-			target = C6FB677D959AD5D50FA6DC493C736AEE /* TTRangeSlider */;
-			targetProxy = D6E2467014BB9D4B97B0607FBC6F3443 /* PBXContainerItemProxy */;
+			target = F9241DCD98FA92944AE3FA2F9D76559A /* TTRangeSlider */;
+			targetProxy = C6EA30FAF9032C2E46AE0594D9FEE74A /* PBXContainerItemProxy */;
 		};
-		AAB28914C0F6BAC083B745C74BAC0C34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = 56F2B8F7A77320A7C8DACD2CE6FA3083 /* SVProgressHUD */;
-			targetProxy = 66F867BA62BCAF20119D013C137BD813 /* PBXContainerItemProxy */;
-		};
-		CEF5B6492D1911D56196493898DBADB9 /* PBXTargetDependency */ = {
+		721FF6C34212EB71A8D1678AB5A1BC90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UICountingLabel;
 			target = EB31A05090143EAF02A3DE187E2CBA22 /* UICountingLabel */;
-			targetProxy = 1EE46CFD89978BF596B215BB0548A4A0 /* PBXContainerItemProxy */;
+			targetProxy = E1442841C52680B22650A697E2BB05DD /* PBXContainerItemProxy */;
+		};
+		C5F247863EFAC6FCAAF67DD3BDB46329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = AD6E3F4ED3D21FEAE66834815C6F6B82 /* SVProgressHUD */;
+			targetProxy = A11545D7F832D79213A8A16DD1FB0899 /* PBXContainerItemProxy */;
 		};
 		EFE21E14DF63D0C035C8B24290F148D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -785,7 +1000,7 @@
 		};
 		100AE87E2A3080D922138B3D439C6BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FA9125837D7EEA9E1BEB3E68B55E6F8 /* UICountingLabel.xcconfig */;
+			baseConfigurationReference = FFAD6F07C474FA6F05FA5C32881D8B08 /* UICountingLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -806,21 +1021,45 @@
 			};
 			name = Debug;
 		};
-		16236986BCE95E042A1FA626A191FD94 /* Debug */ = {
+		173F1A18949267291B74BC78722B37AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8A1ADC056368556986A62BE801B7716 /* TTRangeSlider.xcconfig */;
+			baseConfigurationReference = 7C445594B62B95D1CE7DADDE38079CCF /* FSCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/TTRangeSlider/TTRangeSlider-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = TTRangeSlider;
-				PRODUCT_NAME = TTRangeSlider;
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B23A028AECE63E52C635C5503322DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D55782DE41F6B8C07737699FBF69D0 /* PNChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PNChart/PNChart-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PNChart;
+				PRODUCT_NAME = PNChart;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -829,7 +1068,7 @@
 			};
 			name = Debug;
 		};
-		39658F32AEE45F488FBE05FD165E23EB /* Release */ = {
+		4410BA64B3471E626033FF1EBA3F0A88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 551EE7F5597294649B3840CBDBF5831E /* Pods-SIBUR App.release.xcconfig */;
 			buildSettings = {
@@ -852,21 +1091,21 @@
 			};
 			name = Release;
 		};
-		3B23A028AECE63E52C635C5503322DA3 /* Debug */ = {
+		4F69FD9A497F4A80FADB578B3D0A7429 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F0F38B5ED495B0555A1EA5E261454D6 /* PNChart.xcconfig */;
+			baseConfigurationReference = 60CDDD3B0713E049722C698277837DF9 /* TTRangeSlider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/PNChart/PNChart-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/TTRangeSlider/TTRangeSlider-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = PNChart;
-				PRODUCT_NAME = PNChart;
+				PRODUCT_MODULE_NAME = TTRangeSlider;
+				PRODUCT_NAME = TTRangeSlider;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -875,9 +1114,9 @@
 			};
 			name = Debug;
 		};
-		489420068C6B729B4A10FACFEAB753B4 /* Debug */ = {
+		612A7584652DB271BD871EAC203277ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6354466A365B43F79E2D6D0C3ACF9C6D /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 44FE32B2A0DFE829B2F344293D85C341 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -895,12 +1134,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		79FC060E7AE9C6DBF9467619F34ED1FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F0F38B5ED495B0555A1EA5E261454D6 /* PNChart.xcconfig */;
+			baseConfigurationReference = B7D55782DE41F6B8C07737699FBF69D0 /* PNChart.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -924,7 +1164,7 @@
 		};
 		87B06304D5AEF5F80B9D6E11D978A177 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FA9125837D7EEA9E1BEB3E68B55E6F8 /* UICountingLabel.xcconfig */;
+			baseConfigurationReference = FFAD6F07C474FA6F05FA5C32881D8B08 /* UICountingLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -946,21 +1186,66 @@
 			};
 			name = Release;
 		};
-		8BD670166E79B6F0A0D9C8623DF7B784 /* Release */ = {
+		8835219916FBC7877B517826C63D922B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6354466A365B43F79E2D6D0C3ACF9C6D /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 7C445594B62B95D1CE7DADDE38079CCF /* FSCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		949159981859FF3F72451D589D34DC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B28DA7FAA29E7F464C205A26849757 /* Pods-SIBUR App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99656CC22B0275DC3E465D3C67414E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CDDD3B0713E049722C698277837DF9 /* TTRangeSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TTRangeSlider/TTRangeSlider-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TTRangeSlider;
+				PRODUCT_NAME = TTRangeSlider;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1033,48 +1318,25 @@
 			};
 			name = Debug;
 		};
-		BE0CC9E71162A0EB32DD0BE27D85993E /* Release */ = {
+		ECEA8137520983D42C4B41A8CD9F3E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8A1ADC056368556986A62BE801B7716 /* TTRangeSlider.xcconfig */;
+			baseConfigurationReference = 44FE32B2A0DFE829B2F344293D85C341 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/TTRangeSlider/TTRangeSlider-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = TTRangeSlider;
-				PRODUCT_NAME = TTRangeSlider;
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D1C83370CE8D5381006B340463AE7E05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1B28DA7FAA29E7F464C205A26849757 /* Pods-SIBUR App.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1091,20 +1353,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		384CD0735E6A8B1F06E2BB576A020521 /* Build configuration list for PBXNativeTarget "Pods-SIBUR App" */ = {
+		500F30A1B0C1E7D1571997BD165813D9 /* Build configuration list for PBXNativeTarget "TTRangeSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1C83370CE8D5381006B340463AE7E05 /* Debug */,
-				39658F32AEE45F488FBE05FD165E23EB /* Release */,
+				4F69FD9A497F4A80FADB578B3D0A7429 /* Debug */,
+				99656CC22B0275DC3E465D3C67414E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CAEDDBE93843214494C2F707F620696 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+		603B0FC40EA4EC64E8029E2D0CEA2235 /* Build configuration list for PBXNativeTarget "Pods-SIBUR App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				489420068C6B729B4A10FACFEAB753B4 /* Debug */,
-				8BD670166E79B6F0A0D9C8623DF7B784 /* Release */,
+				949159981859FF3F72451D589D34DC91 /* Debug */,
+				4410BA64B3471E626033FF1EBA3F0A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7426A34D13151C6D8733FB219AA0E298 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECEA8137520983D42C4B41A8CD9F3E28 /* Debug */,
+				612A7584652DB271BD871EAC203277ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1118,20 +1389,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AB688027A282174A05B9B5C2F69DCF00 /* Build configuration list for PBXNativeTarget "FSCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8835219916FBC7877B517826C63D922B /* Debug */,
+				173F1A18949267291B74BC78722B37AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE9F6A3B43F78D2C2B16A55AF725B53A /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				100AE87E2A3080D922138B3D439C6BBC /* Debug */,
 				87B06304D5AEF5F80B9D6E11D978A177 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4362FCF98BCC09D1A07F5CF9FA15B25 /* Build configuration list for PBXNativeTarget "TTRangeSlider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				16236986BCE95E042A1FA626A191FD94 /* Debug */,
-				BE0CC9E71162A0EB32DD0BE27D85993E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
